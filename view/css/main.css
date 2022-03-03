@@ -1,0 +1,203 @@
+:root {
+	--bckgr__color1: #E3CAA5;
+	--bckgr__color2: #CEAB93;
+	--bckgr__color3: #EEEDDE;
+	--bckgr__color4: #084594;
+	--bckgr__color5: #42C2FF;
+	--bckgr__color5: #f8f8f8;
+	--navbar__color1: #185581;
+}
+
+* {
+	margin: 0;
+	padding: 0; 
+	box-sizing: border-box;
+}
+
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+
+.header__logo {
+	display: flex;
+	background: var(--bckgr__color5);
+	align-items: center;
+}
+
+.logo{
+	padding-left: 50px;
+}
+
+.logo__image {
+	width: 120px;
+}
+
+.button-active {
+	display: none;
+}
+.header__navbar{
+	background: var(--navbar__color1);
+}
+
+.header__navbar {
+	position: relative;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	padding: 0 100px;
+}
+
+.navbar .navbar__item {
+	padding: 10px;
+	transition: 0.4s;
+}
+
+.navbar .navbar__item a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 1rem;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+.navbar .navbar__item:hover {
+	/* opacity: 0.4; */
+}
+.active {
+	display: block !important;
+}
+@media screen and (max-width: 992px) {
+	.button-active {
+		display: block;
+		padding-right: 20px;
+	}
+
+	.button button {
+		border: none;
+		cursor: pointer;
+	}
+
+	.button i{
+		font-size: 1.4rem;
+	}
+
+	.logo {
+		margin: 0 auto;
+	}
+
+	.header__navbar {
+		display: none;
+	}
+
+
+	.navbar{
+		display: flex;
+		flex-direction: column;
+
+	} 
+	
+	.navbar .navbar__item {
+		text-align: left;
+		width: 100%;
+		
+	}
+
+	.navbar .navbar__item:hover {
+		background: #000;
+	}
+}
+/* slide */
+.slide{
+	margin-top: 100px;
+}
+/* home  */
+.home-introduce{
+	margin: 0 100px;
+}
+.home-introduce__item{
+	margin-bottom: 30px;
+}
+.introduce-image img{
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+}
+.introduce-review{
+	background-color: #414141;
+	width: 100%;
+	text-align: center;
+}
+.introduce-review__title{
+	color: darkkhaki;
+	padding-top: 5px;
+}
+.introduce-review__title>p{
+	margin: 5px 0;
+	font-size: 15px;
+	font-weight: 550;
+}
+.introduce-review__msg{
+	padding: 5px 0;
+	line-height: 1.5;
+	color: #888;
+}
+.introduce-review__msg>p{
+	font-size: 12px;
+}
+/* dich vu van chuyen */
+.home-service{
+	margin: 100px 100px;
+}
+.home-service-img{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+.home-service-img img{
+	width: 70%;
+	height: auto;
+	object-fit: cover;
+}
+.home-service__item{
+	height: 100%;
+	margin-top: 50px;
+}
+.home-service__item-title p{
+	font-size: 20px;
+	color: #ff3333;
+}
+.item-image{
+	width: 100%;
+}
+.item-image img{
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+}
+.item-review>div{
+	text-align: left;
+}
+.item-review__title>p{
+	font-size: 17px;
+	font-weight: 550;
+}
+.item-review__msg>p{
+	font-size: 12px;
+	display: -webkit-box;
+	max-height: 5.2rem;
+   -webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
+	-webkit-line-clamp: 3;
+	line-height: 1.6rem;
+}
