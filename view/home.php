@@ -49,8 +49,8 @@
 
 
 		<!-- grid Gioi thieu dich vu -->
-		<div class="container home-introduce row">
-			<div class="col-4 home-introduce__item">
+		<div class="container home-introduce row text justify-content-center">
+			<div class="col-md-4 col-sm-12  home-introduce__item">
 				<div class="introduce-image">
 					<img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
 				</div>
@@ -63,7 +63,7 @@
 					</div>
 				</div>
 			</div>
-            <div class="col-4 home-introduce__item">
+            <div class="col-md-4 col-sm-12 home-introduce__item">
 				<div class="introduce-image">
 					<img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
 				</div>
@@ -76,7 +76,7 @@
 					</div>
 				</div>
 			</div>
-            <div class="col-4 home-introduce__item">
+            <div class="col-md-4 col-sm-12 home-introduce__item">
 				<div class="introduce-image">
 					<img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
 				</div>
@@ -89,7 +89,7 @@
 					</div>
 				</div>
 			</div>
-            <div class="col-4 home-introduce__item">
+            <div class="col-md-4 col-sm-12 home-introduce__item">
 				<div class="introduce-image">
 					<img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
 				</div>
@@ -102,7 +102,7 @@
 					</div>
 				</div>
 			</div>
-            <div class="col-4 home-introduce__item">
+            <div class="col-md-4 col-sm-12 home-introduce__item">
 				<div class="introduce-image">
 					<img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
 				</div>
@@ -115,7 +115,7 @@
 					</div>
 				</div>
 			</div>
-            <div class="col-4 home-introduce__item">
+            <div class="col-md-4 col-sm-12 home-introduce__item">
 				<div class="introduce-image">
 					<img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
 				</div>
@@ -144,7 +144,7 @@
                 </div>
                 
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-md-4"col-sm-12 >
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2020/04/thu-tuc-xuat-quan-ao-bao-ho-y-te.jpg" alt="">
                         </div>
@@ -157,7 +157,7 @@
                             </div>
                         </div>
                     </div>
-					<div class="col-4">
+					<div class="col-md-4"col-sm-12 >
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2020/08/long-den-2.jpg" alt="">
                         </div>
@@ -170,7 +170,7 @@
                             </div>
                         </div>
                     </div>   
-					<div class="col-4">
+					<div class="col-md-4"col-sm-12 >
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2020/08/long-den-2.jpg" alt="">
                         </div>
@@ -193,7 +193,7 @@
                 </div>
                 
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-md-4"col-sm-12 >
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2018/03/dịch-vụ-hải-quan.jpg" alt="">
                         </div>
@@ -206,7 +206,7 @@
                             </div>
                         </div>
                     </div>
-					<div class="col-4">
+					<div class="col-md-4"col-sm-12 >
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2018/03/dịch-vụ-hải-quan.jpg" alt="">
                         </div>
@@ -219,7 +219,7 @@
                             </div>
                         </div>
                     </div>   
-					<div class="col-4">
+					<div class="col-md-4"col-sm-12 >
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2018/03/dịch-vụ-hải-quan.jpg" alt="">
                         </div>
@@ -242,7 +242,7 @@
                 </div>
                 
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-md-4"col-sm-12 >
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2016/11/xuat-khau-gao1.jpg" alt="">
                         </div>
@@ -258,7 +258,7 @@
                             </div>
                         </div>
                     </div>
-					<div class="col-4">
+					<div class="col-md-4"col-sm-12 >
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2016/11/xuat-khau-gao1.jpg" alt="">
                         </div>
@@ -274,7 +274,7 @@
                             </div>
                         </div>
                     </div>
-					<div class="col-4">
+					<div class="col-md-4"col-sm-12 >
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2016/11/xuat-khau-gao1.jpg" alt="">
                         </div>
@@ -300,7 +300,7 @@
                 </div>
                 
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-md-4"col-sm-12 >
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2022/02/chuyen-hang-dong-lanh.jpg" alt="">
                         </div>
@@ -313,7 +313,7 @@
                             </div>
                         </div>
                     </div>
-					<div class="col-4">
+					<div class="col-md-4"col-sm-12 >
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2022/02/chuyen-hang-dong-lanh.jpg" alt="">
                         </div>
@@ -326,7 +326,7 @@
                             </div>
                         </div>
                     </div>   
-					<div class="col-4">
+					<div class="col-md-4"col-sm-12 >
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2022/02/chuyen-hang-dong-lanh.jpg" alt="">
                         </div>
@@ -349,7 +349,7 @@
                 </div>
                 
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-md-4"col-sm-12 >
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2020/04/thu-tuc-xuat-quan-ao-bao-ho-y-te.jpg" alt="">
                         </div>
@@ -362,7 +362,7 @@
                             </div>
                         </div>
                     </div>
-					<div class="col-4">
+					<div class="col-md-4"col-sm-12 >
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2020/04/thu-tuc-xuat-quan-ao-bao-ho-y-te.jpg" alt="">
                         </div>
@@ -375,7 +375,7 @@
                             </div>
                         </div>
                     </div>   
-					<div class="col-4">
+					<div class="col-md-4"col-sm-12 >
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2020/04/thu-tuc-xuat-quan-ao-bao-ho-y-te.jpg" alt="">
                         </div>
