@@ -84,7 +84,7 @@
 			<!-- end navbar -->
 
 		</header>
-		<script src="/thuctap/view/app/index.js"></script>
+		
 		<!-- end header -->
 		
 		
