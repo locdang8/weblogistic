@@ -125,9 +125,9 @@
                 <li><a href="#">Trang Chủ</a></li>
                 <li><a href="#">Thông tin liên hệ</a></li>
                 <li class="menu-mini"><a href="#">Dịch vụ</a>
-                   <ul class="list-mini">
-                       <li><a href=""></a></li>
-                   </ul> 
+                    <ul class="list-mini">
+
+                    </ul>
                 </li>
                 <li><a href="#">Tư vấn hỏi đáp</a></li>
                 <li><a href="#">Liên hệ</a></li>
@@ -140,7 +140,9 @@
 </body>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="/thuctap/view/app/index.js"></script>
+<!-- <script src="/thuctap/view/app/index.js"></script> -->
+<script src="http://localhost/weblogistic/view/app/index.js"></script>
+<script src="http://localhost/weblogistic/view/app/dichvu.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 </script>

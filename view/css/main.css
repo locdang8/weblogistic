@@ -268,6 +268,10 @@
 	font-size: 1.4rem;
 }
 
+.contact__container .noidung-link .noidung-menu li a{
+	font-size: 1.4rem;
+}
+
 .fa-facebook:hover {
 	color: var(--fb__clr);
 }
@@ -283,6 +287,46 @@
 .fa-youtube:hover {
 	color: var(--youtube__clr);
 }
+
+.list-mini {
+	list-style: none;
+}
+
+.list-mini a {
+	color: #000;
+}
+
+.list-set {
+	display: none;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.list-set {
+	display: none;
+	position: absolute;
+	color: #fff;
+	background: var(--navbar__color1);
+	min-width: 300px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	list-style: none;
+}
+
+.list-set li {
+	padding: 10px;
+}
+
+.list-set li:hover {
+	background: #000;
+}
+
+.noidung-contact .infor li span{
+	font-size: 1.4rem;
+}
+
 
 @media screen and (max-width: 992px) {
 	.button-active {
@@ -334,6 +378,26 @@
 
 	.dichvu__container {
 		grid-template-columns: repeat(1,auto);
+	}
+
+	.contact__container {
+		flex-direction: column-reverse;
+	}
+
+	.contact__container .noidung-link .noidung-menu li a{
+		font-size: 1.3rem;
+	}
+
+	.list-mini {
+		display: none;
+	}
+
+	.contact__container .social-media .social-icon{
+		justify-content: center;
+	}
+
+	.noidung-contact .infor li span{
+		font-size: 1.3rem;
 	}
 }
 /* oi gioi oi */
