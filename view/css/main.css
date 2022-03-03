@@ -4,8 +4,13 @@
 	--bckgr__color3: #EEEDDE;
 	--bckgr__color4: #084594;
 	--bckgr__color5: #42C2FF;
-	--bckgr__color5: #f8f8f8;
+	--bckgr__color6: #f8f8f8;
+	--bckgr__color7: #488FB1;
 	--navbar__color1: #185581;
+	--fb__clr: #4267B2;
+	--insta__clr: #833AB4;
+	--youtube__clr: #FF0000;
+	--twitter__clr: #1DA1F2;
 }
 
 * {
@@ -25,7 +30,7 @@
 
 .header__logo {
 	display: flex;
-	background: var(--bckgr__color5);
+	background: var(--bckgr__color6);
 	align-items: center;
 }
 
@@ -40,6 +45,7 @@
 .button-active {
 	display: none;
 }
+
 .header__navbar{
 	background: var(--navbar__color1);
 }
@@ -68,9 +74,7 @@
 	text-transform: uppercase;
 }
 
-.navbar .navbar__item:hover {
-	/* opacity: 0.4; */
-}
+
 .active {
 	display: block !important;
 }
@@ -97,6 +101,7 @@
 	width: 100%;
 	text-align: center;
 }
+
 .introduce-review__title{
 	color: darkkhaki;
 	padding-top: 5px;
@@ -164,6 +169,120 @@
 	line-height: 1.6rem;
 }
 
+#footer {
+	background: #fff;
+}
+
+.footer-ship {
+	background: #42C2FF;
+	
+}
+
+.footer-ship .footer-ship-list {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(5,auto);
+	justify-items: center;
+	gap: 10px;
+	width: 100%;
+}
+
+.footer-ship .footer-ship-list .footer__item strong {
+	font-size: 1.3rem;
+}
+
+.footer-ship .footer-ship-list .footer__item p {
+	text-align: center;
+}
+
+.dichvu__container {
+	border-bottom: 1px solid #000;
+	display: grid;
+	grid-template-columns: repeat(4,auto);
+	gap: 10px;
+}
+
+.dichvu__container .dichvu__item ul{
+	list-style: none;
+}
+
+.dichvu__container .dichvu__item h2 {
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #000;
+}
+
+.dichvu__container .dichvu__item ul li a {
+	text-decoration: none;
+	transition: 0.5s;
+	color: #000;
+}
+
+.dichvu__container .dichvu__item ul li a:hover {
+	
+}
+
+.contact__container {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.contact__container .noidung > div > img {
+	width: 120px;
+} 
+
+.contact__container .noidung .noidung-contact .infor {
+	list-style: none;
+}
+
+.contact__container .noidung-link .noidung-menu {
+	display: flex;
+	justify-content: space-around;
+}
+
+.contact__container .noidung-link ul {
+	list-style: none;
+}
+
+.contact__container .noidung-link ul li {
+	padding: 10px;
+}
+
+.contact__container .noidung-link ul li a {
+	color: #000;
+	font-size: 1.4rem;
+}
+
+.contact__container .social-media .social-icon {
+	display: flex;
+	list-style: none;
+}
+
+.contact__container .social-media .social-icon > li {
+	padding-right: 10px;
+}
+
+.contact__container .social-media .social-icon > li > a {
+	color: #000;
+	font-size: 1.4rem;
+}
+
+.fa-facebook:hover {
+	color: var(--fb__clr);
+}
+
+.fa-twitter:hover {
+	color: var(--twitter__clr);
+}
+
+.fa-instagram:hover {
+	color: var(--insta__clr);
+}
+
+.fa-youtube:hover {
+	color: var(--youtube__clr);
+}
 
 @media screen and (max-width: 992px) {
 	.button-active {
@@ -203,6 +322,18 @@
 
 	.navbar .navbar__item:hover {
 		background: #000;
+	}
+	
+	.footer-ship .footer-ship-list {
+		grid-template-columns: repeat(2,auto);
+	}
+
+	.footer-ship .footer-ship-list .footer__item strong {
+		font-size: 1.1rem;
+	}
+
+	.dichvu__container {
+		grid-template-columns: repeat(1,auto);
 	}
 }
 /* oi gioi oi */

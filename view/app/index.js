@@ -9,4 +9,30 @@ menuBtn.addEventListener("click" , function() {
     barIcon.classList.toggle("fa-x");
 });
 
-// headerNav.style.display = "block";
+// object dichvu
+
+function Dichvu(ten) {
+    this.ten = ten;
+}
+
+let dichvu_array = [
+    new Dichvu("Dịch vụ vận tải hàng không"),
+    new Dichvu("Dịch vụ vận tải"),
+    new Dichvu("Dịch vụ hải quan"),
+    new Dichvu("Dịch vụ COD")
+];
+
+const listMini = document.querySelector(".list-mini");
+console.log(listMini);
+window.addEventListener("DOMContentLoaded", function() {
+    let ten_dv = dichvu_array.map(function(element) {
+        return `<li><a href="">${element.ten}</a></li>`;
+    }).join("");
+
+    listMini.innerHTML = ten_dv;
+});
+
+
+// function getDichVu() {
+
+// }
