@@ -74,46 +74,8 @@
 .active {
 	display: block !important;
 }
-@media screen and (max-width: 992px) {
-	.button-active {
-		display: block;
-		padding-right: 20px;
-	}
-
-	.button button {
-		border: none;
-		cursor: pointer;
-	}
-
-	.button i{
-		font-size: 1.4rem;
-	}
-
-	.logo {
-		margin: 0 auto;
-	}
-
-	.header__navbar {
-		display: none;
-	}
 
 
-	.navbar{
-		display: flex;
-		flex-direction: column;
-
-	} 
-	
-	.navbar .navbar__item {
-		text-align: left;
-		width: 100%;
-		
-	}
-
-	.navbar .navbar__item:hover {
-		background: #000;
-	}
-}
 /* slide */
 .slide{
 	margin-top: 100px;
@@ -200,4 +162,46 @@
 	white-space: normal;
 	-webkit-line-clamp: 3;
 	line-height: 1.6rem;
+}
+
+
+@media screen and (max-width: 992px) {
+	.button-active {
+		display: block;
+		padding-right: 20px;
+	}
+
+	.button button {
+		border: none;
+		cursor: pointer;
+	}
+
+	.button i{
+		font-size: 1.4rem;
+	}
+
+	.logo {
+		margin: 0 auto;
+	}
+
+	.header__navbar {
+		display: none;
+	}
+
+
+	.navbar{
+		display: flex;
+		flex-direction: column;
+
+	} 
+	
+	.navbar .navbar__item {
+		text-align: left;
+		width: 100%;
+		
+	}
+
+	.navbar .navbar__item:hover {
+		background: #000;
+	}
 }
