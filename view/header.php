@@ -19,80 +19,49 @@
 
 <body>
     <div class="container-fluid">
-        <!-- header -->
-        <header class="header container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="../view/images/logo/logo.png" alt="" style="width: 80px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <div class="header__logo">
-
-                <div class="logo">
-
-                    <img src="../view/images/logo/logo.png" class="logo__image" alt="">
-
-                </div>
-
-                <div class="button button-active">
-
-                    <button class="button-click">
-
-                        <i class="fa-solid fa-bars"></i>
-
-                    </button>
-
-                </div>
-
-            </div>
-            <!-- end header -->
-            <!-- navbar -->
-            <div class="header__navbar">
-
-                <ul class="navbar">
-
-                    <li class="navbar__item">
-
-                        <a href="/weblogistic/index.php">Trang chủ</a>
-
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
                     </li>
-
-                    <li class="navbar__item">
-
-                        <a href="/weblogistic/view/gioithieu.php">Giới thiệu</a>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Giới thiệu</a>
                     </li>
-
-                    <li class="navbar__item dropdown">
-
-                        <a href="#">Dịch vụ</a>
-
-                        <ul class="list-set">
-
-                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dịch vụ
+                        </a>
+                        <div class="dropdown-menu" id="list-set" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
                     </li>
-
-                    <li class="navbar__item">
-
-                        <a href="/weblogistic/view/tintuc.php">Tin tức</a>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Tin tức</a>
                     </li>
-
-                    <li class="navbar__item">
-
-                        <a href="#">Tư vấn hỏi đáp</a>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Tư vấn hỏi đáp</a>
                     </li>
-
-                    <li class="navbar__item">
-
-                        <a href="/weblogistic/view/lienhe.php">Liên hệ</a>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Liên hệ</a>
                     </li>
-
                 </ul>
-
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
             </div>
-            <!-- end navbar -->
-
-        </header>
-
+        </nav>
         <!-- end header -->
 
 

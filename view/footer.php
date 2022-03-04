@@ -1,43 +1,65 @@
 <footer id="footer">
     <!-- start -->
     <div class="footer-ship">
-        <ul class="footer-ship-list">
-            <li class="footer__item">
-                <i class="fa-solid fa-pen-to-square"></i>
-                <strong>Chiết khấu ưu đãi</strong>
-                <p>Chưa biết viết gì</p>
-            </li>
+        <div class="footer-ship-list row">
+            <div class="footer__item  col-sm-6 col-xl-4 text-center">
+                <i class="fa-solid fa-square-pen"></i>
+                <div>
+                    <strong>Chiết khấu ưu đãi</strong>
+                    <p>Chưa biết viết gì</p>
+                </div>
+            </div>
 
-            <li class="footer__item">
+            <div class="footer__item col-sm-6 col-xl-4 text-center">
                 <i class="fa-solid fa-circle-check"></i>
-                <strong>Chất lượng dịch vụ</strong>
-                <p>Chưa biết viết gì</p>
-            </li>
+                <div>
+                    <strong>Chất lượng dịch vụ</strong>
+                    <p>Chưa biết viết gì</p>
+                </div>
 
-            <li class="footer__item">
+            </div>
+
+            <div class="footer__item col-sm-6 col-xl-4 text-center">
                 <i class="fa-solid fa-clock"></i>
-                <strong>Thời gian giao hàng</strong>
-                <p>Chưa biết viết gì</p>
-            </li>
+                <div>
+                    <strong>Thời gian giao hàng</strong>
+                    <p>Chưa biết viết gì</p>
+                </div>
 
-            <li class="footer__item">
+            </div>
+
+            <div class="footer__item col-sm-6 col-xl-4 text-center">
                 <i class="fa-solid fa-money-bill-1"></i>
-                <strong> Giá cả phải chăng</strong>
-                <p>Chưa biết viết gì</p>
-            </li>
+                <div>
+                    <strong> Giá cả phải chăng</strong>
+                    <p>Chưa biết viết gì</p>
+                </div>
 
-            <li class="footer__item">
+            </div>
+
+            <div class="footer__item col-6 col-xl-4 text-center">
                 <i class="fa-solid fa-cubes"></i>
-                <strong>Dịch vụ khách hàng</strong>
-                <p>Chưa biết viết gì</p>
-            </li>
-        </ul>
+                <div>
+                    <strong>Dịch vụ khách hàng</strong>
+                    <p>Chưa biết viết gì</p>
+                </div>
+
+            </div>
+            <div class="footer__item col-6 col-xl-4 text-center">
+                <i class="fa-brands fa-paypal"></i>
+                <div>
+                    <strong>Thanh toán an toàn</strong>
+                    <p>Chưa biết viết gì</p>
+                </div>
+
+            </div>
+        </div>
     </div>
     <!-- end -->
 
     <!-- start dich vu -->
-    <div class="dichvu__container">
-        <div class="dichvu__item">
+    <div class="dichvu__container row py-5 bg-dark">
+        <div class="dichvu__item col-sm-6 col-xl-3">
             <h2> DỊCH VỤ VẬN TẢI HÀNG KHÔNG</h1>
                 <ul>
                     <li><a href="">Dịch vụ vận chuyển hàng không giá rẻ</a></li>
@@ -46,7 +68,7 @@
                 </ul>
         </div>
 
-        <div class="dichvu__item">
+        <div class="dichvu__item col-sm-6 col-md-3">
             <h2>DỊCH VỤ VẬN TẢI</h2>
             <ul>
                 <li><a href="">Dịch vụ vận tải từ Hải Phòng đi các tỉnh</a></li>
@@ -55,7 +77,7 @@
             </ul>
         </div>
 
-        <div class="dichvu__item">
+        <div class="dichvu__item col-sm-6 col-xl-3">
             <h2>DỊCH VỤ HẢI QUAN</h2>
             <ul>
                 <li><a href="">Dịch vụ cod tại Hải Phòng</a></li>
@@ -63,7 +85,7 @@
             </ul>
         </div>
 
-        <div class="dichvu__item">
+        <div class="dichvu__item col-sm-6 col-xl-3">
             <h2>DỊCH VỤ COD</h2>
             <ul>
                 <li><a href="">Dịch vụ cod tại Hải Phòng</a></li>
@@ -77,7 +99,7 @@
     </div>
 
 
-    <div class="contact__container">
+    <div class="contact__container bg-dark">
         <!-- noidung -->
         <div class="noidung">
             <div>
