@@ -49,13 +49,13 @@
 
                     <li class="navbar__item">
 
-                        <a href="#">Trang chủ</a>
+                        <a href="/weblogistic/index.php">Trang chủ</a>
 
                     </li>
 
                     <li class="navbar__item">
 
-                        <a href="#">Giới thiệu</a>
+                        <a href="/weblogistic/view/gioithieu.php">Giới thiệu</a>
 
                     </li>
 
