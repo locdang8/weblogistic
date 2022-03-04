@@ -1,5 +1,5 @@
 <?php include"header.php"?>
-<link rel="stylesheet" href="../view/css/gioithieu.css">
+<link rel="stylesheet" href="../view/css/base.css">
 <div class="contact container" style="margin-top: 100px;">
             <div class="map container-fluid">
             <iframe class="container-fluid my-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7456.307310302173!2d106.7012796722077!3d20.865856069581927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7b49c5391b37%3A0x50f047241657608!2zQ8O0bmcgdHkgVE5ISCBE4buLY2ggduG7pSBMb2dpc3RpY3MgJiBUaMawxqFuZyBt4bqhaSBIb8OgbmcgTWluaA!5e0!3m2!1svi!2s!4v1646367082915!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

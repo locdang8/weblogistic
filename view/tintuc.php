@@ -1,5 +1,5 @@
 <?php include "header.php"?>
-<link rel="stylesheet" href="../view/css/gioithieu.css">
+<link rel="stylesheet" href="../view/css/base.css">
 		<div class="news container-fluid">
 			<!-- image------------- -->
 			<div class="news-image text-center">

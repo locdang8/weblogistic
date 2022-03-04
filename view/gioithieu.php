@@ -1,5 +1,5 @@
 <?php include "../view/header.php" ?>
-<link rel="stylesheet" href="../view/css/gioithieu.css">
+<link rel="stylesheet" href="../view/css/base.css">
 <div class="section__image">
     <img src="./images/banner/banner-van-tai.jpg" alt="" class="container-fluid">
 </div>
@@ -7,7 +7,7 @@
 <div class="introduce my-5 border-top">
 
     <div class="introduce-col1 row">
-        <div class="col-8 text-center border-right">
+        <div class="col-12 col-md-8 text-center border-right">
             <div class="introduce-header">
                 <p class="h3 my-3">Công ty TNHH Dịch vụ Logistics & Thương mại Hoàng Minh</p>
                 <div>
@@ -16,7 +16,7 @@
             </div>
 
             <div class="introduce-bookmark">
-                <ul>
+                <ul class="introduce-bookmark-shadow">
                     <li>
                         <a href="#first">Công ty TNHH Dịch vụ Logistics & Thương mại Hoàng Minh</a>
                         <ul>
@@ -24,7 +24,6 @@
                             <li><a href="#three">Những lợi ích khi sử dụng dịch vụ công ty</a></li>
                         </ul>
                     </li>
-
                 </ul>
             </div>
             <div id="first" class="introduce-content">
@@ -47,7 +46,7 @@
             </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-12 col-md-4">
             <div class="menu">
                 <div class="menu-list">
                     <div class="menu-title">
