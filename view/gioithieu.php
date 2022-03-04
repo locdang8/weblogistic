@@ -7,8 +7,8 @@
 <div class="introduce my-5 border-top">
 
     <div class="introduce-col1 row">
-        <div class="col-12 col-md-8 text-center border-right">
-            <div class="introduce-header">
+        <div class="col-12 col-md-8 border-right">
+            <div class="introduce-header text-center">
                 <p class="h3 my-3">Công ty TNHH Dịch vụ Logistics & Thương mại Hoàng Minh</p>
                 <div>
                     <img src="./images/banner/banner2.jpg" alt="" class="container">
@@ -26,9 +26,9 @@
                     </li>
                 </ul>
             </div>
-            <div id="first" class="introduce-content">
-                <p class="title">Công ty TNHH Dịch vụ Logistics & Thương mại Hoàng Minh</p>
-                <p>
+            <div id="first" class="introduce-content container">
+                <p class="title text-center">Công ty TNHH Dịch vụ Logistics & Thương mại Hoàng Minh</p>
+                <span>
                     Thành lập từ năm 2019, tuy tuổi đời của công ty còn ngắn hạn đã có những phát triển tiến bộ trong
                     những
                     công việc với đối tác khách hàng, <br>
@@ -39,7 +39,7 @@
                     Công ty cam kết với chất lượng dịch vụ hiệu quả cao, uy tín, đem đến trải nghiệm tốt nhất cho toàn
                     bộ
                     khách hàng.
-                </p>
+                </span>
                 <div>
                     <img src="./images/banner/banner3.png" alt="" class="container">
                 </div>

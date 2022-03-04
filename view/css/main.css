@@ -58,7 +58,9 @@
 	width: 100%;
 	text-align: center;
 }
+.introduce-content{
 
+}
 .introduce-review__title{
 	color: darkkhaki;
 	padding-top: 5px;
@@ -195,7 +197,11 @@ i{
 .contact__container .noidung .noidung-contact .infor {
 	list-style: none;
 }
-
+.contact__container .noidung .noidung-contact span{
+	color: #f8f8f8;
+	font-size: 1rem;
+	text-align: left;
+}
 .contact__container .noidung-link .noidung-menu {
 	display: flex;
 	justify-content: space-around;
@@ -224,14 +230,14 @@ i{
 }
 
 .contact__container .social-media .social-icon > li > a {
-	color: currentColor;
-	font-size: 1.4rem;
+	color: #f8f8f8;
+	font-size: 1.2rem;
 }
 
-.contact__container .noidung-link .noidung-menu li a{
-	font-size: 1.4rem;
+.contact__container .noidung-link .noidung-menu a{
+	font-size: 1.2rem;
+	color: #f8f8f8;
 }
-
 .fa-facebook:hover {
 	color: var(--fb__clr);
 }
@@ -257,7 +263,7 @@ i{
 }
 
 .noidung-contact .infor li span{
-	font-size: 1.4rem;
+	font-size: 1rem;
 }
 
 .data-image>img{

@@ -2,7 +2,7 @@
     <!-- start -->
     <div class="footer-ship">
         <div class="footer-ship-list row">
-            <div class="footer__item  col-sm-6 col-xl-4 text-center">
+            <div class="footer__item  col-sm-6 col-xl-4 justify-content-center">
                 <i class="fa-solid fa-square-pen"></i>
                 <div>
                     <strong>Chiết khấu ưu đãi</strong>
@@ -10,7 +10,7 @@
                 </div>
             </div>
 
-            <div class="footer__item col-sm-6 col-xl-4 text-center">
+            <div class="footer__item col-sm-6 col-xl-4 justify-content-center">
                 <i class="fa-solid fa-circle-check"></i>
                 <div>
                     <strong>Chất lượng dịch vụ</strong>
@@ -19,7 +19,7 @@
 
             </div>
 
-            <div class="footer__item col-sm-6 col-xl-4 text-center">
+            <div class="footer__item col-sm-6 col-xl-4 justify-content-center">
                 <i class="fa-solid fa-clock"></i>
                 <div>
                     <strong>Thời gian giao hàng</strong>
@@ -28,7 +28,7 @@
 
             </div>
 
-            <div class="footer__item col-sm-6 col-xl-4 text-center">
+            <div class="footer__item col-sm-6 col-xl-4 justify-content-center">
                 <i class="fa-solid fa-money-bill-1"></i>
                 <div>
                     <strong> Giá cả phải chăng</strong>
@@ -37,7 +37,7 @@
 
             </div>
 
-            <div class="footer__item col-6 col-xl-4 text-center">
+            <div class="footer__item col-6 col-xl-4 justify-content-center">
                 <i class="fa-solid fa-cubes"></i>
                 <div>
                     <strong>Dịch vụ khách hàng</strong>
@@ -45,7 +45,7 @@
                 </div>
 
             </div>
-            <div class="footer__item col-6 col-xl-4 text-center">
+            <div class="footer__item col-6 col-xl-4 justify-content-center">
                 <i class="fa-brands fa-paypal"></i>
                 <div>
                     <strong>Thanh toán an toàn</strong>
@@ -58,9 +58,9 @@
     <!-- end -->
 
     <!-- start dich vu -->
-    <div class="dichvu__container row py-5 bg-dark">
+    <div class="dichvu__container row p-5 bg-dark">
         <div class="dichvu__item col-sm-6 col-xl-3">
-            <h2> DỊCH VỤ VẬN TẢI HÀNG KHÔNG</h1>
+            <h2> DỊCH VỤ VẬN TẢI HÀNG KHÔNG</h2>
                 <ul>
                     <li><a href="">Dịch vụ vận chuyển hàng không giá rẻ</a></li>
                     <li><a href="">Dịch vụ vận chuyển hàng không Campuchia uy tín,chuyên nghiệp</a></li>
@@ -75,7 +75,7 @@
                 <li><a href="">Dịch vụ vận tải từ Hải Phòng đi Hồ Chí Minh</a></li>
                 <li><a href="">Dịch vụ vận tải từ Hải Phòng Lào</a></li>
             </ul>
-        </div>
+       </div>
 
         <div class="dichvu__item col-sm-6 col-xl-3">
             <h2>DỊCH VỤ HẢI QUAN</h2>
@@ -83,7 +83,7 @@
                 <li><a href="">Dịch vụ cod tại Hải Phòng</a></li>
                 <li><a href="">Dịch vụ cod tại Hà Nội</a></li>
             </ul>
-        </div>
+       </div>
 
         <div class="dichvu__item col-sm-6 col-xl-3">
             <h2>DỊCH VỤ COD</h2>
@@ -99,9 +99,9 @@
     </div>
 
 
-    <div class="contact__container bg-dark">
+    <div class="contact__container bg-dark row py-5">
         <!-- noidung -->
-        <div class="noidung">
+        <div class="noidung col-3 ml-3">
             <div>
                 <img src="../view/images/logo/logo.png" alt="">
             </div>
@@ -111,8 +111,8 @@
                     <li>
                         <span>
                             <i class="fa fa-map-maker"></i>
-                            Địa chỉ: 21/103 Lê Lai <br>
-                            Quận Ngô Quyền,Thành phố Hải Phòng <br>
+                            <p>Địa chỉ: 21/103 Lê Lai
+                            Quận Ngô Quyền,Thành phố Hải Phòng</p>
                             Việt Nam
                         </span>
                     </li>
@@ -142,18 +142,16 @@
         <!-- end noidung -->
 
         <!-- menu-list -->
-        <div class="noidung-link">
-            <ul class="noidung-menu">
-                <li><a href="#">Trang Chủ</a></li>
-                <li><a href="#">Thông tin liên hệ</a></li>
-                <li class="menu-mini"><a href="#">Dịch vụ</a>
+        <div class="noidung-link col-8">
+            <div class="noidung-menu row">
+                <div class="menu-mini col-4"><a href="#">Dịch vụ</a>
                     <ul class="list-mini">
 
                     </ul>
-                </li>
-                <li><a href="#">Tư vấn hỏi đáp</a></li>
-                <li><a href="#">Liên hệ</a></li>
-            </ul>
+                </div>
+                <div class="col-4"><a href="#">Tư vấn hỏi đáp</a></div>
+                <div class="col-4"><a href="#">Liên hệ</a></div>
+            </div>
         </div>
         <!-- end menu-list -->
     </div>
