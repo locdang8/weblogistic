@@ -70,7 +70,7 @@
 
                     <li class="navbar__item">
 
-                        <a href="#">Tin tức</a>
+                        <a href="/weblogistic/view/tintuc.php">Tin tức</a>
 
                     </li>
 
@@ -82,7 +82,7 @@
 
                     <li class="navbar__item">
 
-                        <a href="#">Liên hệ</a>
+                        <a href="/weblogistic/view/lienhe.php">Liên hệ</a>
 
                     </li>
 
