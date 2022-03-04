@@ -141,8 +141,11 @@
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <!-- <script src="/thuctap/view/app/index.js"></script> -->
-<script src="http://localhost/weblogistic/view/app/index.js"></script>
-<script src="http://localhost/weblogistic/view/app/dichvu.js"></script>
+<!-- <script src="http://localhost/weblogistic/view/app/index.js"></script>
+<script src="http://localhost/weblogistic/view/app/dichvu.js"></script> -->
+../view/images/logo/logo.png
+<script src="../view/app/index.js"></script>
+<script src="../view/app/dichvu.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 </script>
