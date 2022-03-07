@@ -1,4 +1,7 @@
 <?php include"header.php"?>
+<?php include "../model/thuvien.php" ?>
+
+
 <link rel="stylesheet" href="../view/css/base.css">
 <div class="contact container" style="margin-top: 100px;">
             <div class="map container-fluid">
@@ -21,7 +24,7 @@
 				<li class="contact-item-list">Website: <span></span></li>
 			</div>
 			<div class="contact-item mt-5">
-				<form>
+				<form action="post">
 				  <div class="form-row">
 				    <div class="form-group col-md-12">
 				      <label for="inputEmail4">Email</label>
@@ -41,7 +44,15 @@
 				      <label for="inputService">Chọn dịch vụ</label>
 				      <select id="inputService" class="form-control">
 				        <option selected>Choose...</option>
-				        <option>...</option>
+				        <!-- xuất các dịch vụ từ database -->
+						<?php 
+							$element = showDichvu($pdo);
+							// echo $element[1]["tendv"];
+							foreach ($element as $value) {
+								// code...
+						?>
+						<option value="$value['tendv']"><?php echo $value["tendv"]?></option>
+						<?php }?>
 				      </select>
 				    </div>
 				    <div class="form-group col-md-2">
@@ -61,3 +72,4 @@
 				</form>
 			</div>
 		</div>
+		<?php  $pdo = null;?>
