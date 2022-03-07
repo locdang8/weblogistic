@@ -1,70 +1,70 @@
-<?php include "header.php"?>
-<link rel="stylesheet" href="../view/css/base.css">
-<div class="news container-fluid">
+<?php include "header.php";?>
+<div class="advise container-fluid">
     <!-- image------------- -->
-    <div class="news-image text-center">
+    <div class="advise-image text-center">
         <img class="container-fluid mx-0 px-0"
-            src="https://saonamlogistics.com/wp-content/uploads/2019/08/logistics.5c06fe2e0624d.jpg" alt="">
+            src="https://bestcargo.vn/wp-content/uploads/2018/05/van-chuyen-hang-hoa-quoc-te-chuyen-nghiep.jpg" alt="">
     </div>
     <!-- --------------------- -->
     <!-- data -->
-    <div class="news-data container-fluid mt-5">
-        <div class="news-data-title text-center">
-            <p class="h5 font-weight-bold border-bottom mb-0">Tin tức</p>
+    <div class="advise-data container-fluid mt-5">
+        <div class="advise-data-title text-center">
+            <p class="h5 font-weight-bold border-bottom mb-0">Hỏi đáp</p>
+            <p>Tập hợp những câu hỏi thường gặp trong hoạt động ngoại thương</p>
         </div>
-        <div class="news-data-grid row mt-10 mx-md-4" data-aos="fade-right">
+        <div class="advise-data-grid row mt-10 mx-md-3" data-aos="fade-right">
             <div class="col-md-8 border-right">
                 <div class="row">
                     <!-- bai viet .......   -->
-                    <div class="col-md-6 col-12 news-data-item">
-                        <div class="data-image">
+                    <div class="col-12 advise-data-item">
+                        <div class="data-image-advise">
                             <img class="container mx-0 px-0"
-                                src="https://bestcargo.vn/wp-content/uploads/2022/01/Van-chuyen-hang-hoa-Bac-Nam-bang-tau-hoa.jpeg"
+                                src="https://bestcargo.vn/wp-content/uploads/2021/10/van-chuyen-nuoc-ngot-ve-viet-nam-1536x1105.jpg"
                                 alt="">
                         </div>
-                        <div class="data-note text-center">
-                            <p>Dịch vụ tư vấn xuất nhập khẩu</p>
+                        <div class="data-note text-center h4">
+                            <p>Quy định về vận chuyển chất lỏng qua đường hàng không chi tiết</p>
                         </div>
-                        <div class="data-title text-center">
+                        <div class="data-title">
                             <p>Dịch vụ tư vấn xuất nhập khẩu Trong trường hợp nào doanh nghiệp xuất nhập...</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 news-data-item">
-                        <div class="data-image">
+                    <div class="col-12 advise-data-item">
+                        <div class="data-image-advise">
                             <img class="container mx-0 px-0"
                                 src="https://bestcargo.vn/wp-content/uploads/2022/01/Van-chuyen-hang-hoa-Bac-Nam-bang-tau-hoa.jpeg"
                                 alt="">
                         </div>
-                        <div class="data-note text-center">
+                        <div class="data-note text-center h4">
                             <p>Dịch vụ tư vấn xuất nhập khẩu</p>
                         </div>
-                        <div class="data-title text-center">
+                        <div class="data-title">
                             <p>Dịch vụ tư vấn xuất nhập khẩu Trong trường hợp nào doanh nghiệp xuất nhập...</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 news-data-item">
-                        <div class="data-image">
+                    <div class="col-12 advise-data-item">
+                        <div class="data-image-advise">
                             <img class="container mx-0 px-0"
                                 src="https://bestcargo.vn/wp-content/uploads/2022/01/Van-chuyen-hang-hoa-Bac-Nam-bang-tau-hoa.jpeg"
                                 alt="">
                         </div>
-                        <div class="data-note text-center">
+                        <div class="data-note text-center h4">
                             <p>Dịch vụ tư vấn xuất nhập khẩu</p>
                         </div>
-                        <div class="data-title text-center">
+                        <div class="data-title">
                             <p>Dịch vụ tư vấn xuất nhập khẩu Trong trường hợp nào doanh nghiệp xuất nhập...</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 news-data-item">
-                        <div class="data-image">
+                    <div class="col-12 advise-data-item">
+                        <div class="data-image-advise">
                             <img class="container mx-0 px-0"
                                 src="https://bestcargo.vn/wp-content/uploads/2022/01/Van-chuyen-hang-hoa-Bac-Nam-bang-tau-hoa.jpeg"
                                 alt="">
                         </div>
-                        <div class="data-note text-center">
+                        <div class="data-note text-center h4">
                             <p>Dịch vụ tư vấn xuất nhập khẩu</p>
                         </div>
-                        <div class="data-title text-center">
+                        <div class="data-title">
                             <p>Dịch vụ tư vấn xuất nhập khẩu Trong trường hợp nào doanh nghiệp xuất nhập...</p>
                         </div>
                     </div>
@@ -72,10 +72,9 @@
                 </div>
             </div>
             <div class="col-md-4 right-new" data-aos="fade-left">
-				<div class="menu">
-					<!-- add.js se tao elemet tin ben phai tai day -->
-				</div>
-                
+                <div class="menu">
+                    <!-- js add.js sẽ tạo element tin tức ở đây -->
+                </div>
             </div>
         </div>
         <div class="phan-trang container m-5 justify-content-center row">
@@ -91,6 +90,5 @@
         </div>
     </div>
 </div>
-</body>
-<?php include "footer.php"; ?>
+<?php include "footer.php"?>
 </html>
