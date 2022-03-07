@@ -5,18 +5,16 @@
 </div>
 <!-- start introduce -->
 <div class="introduce my-5 border-top">
-
-    <div class="introduce-col1 row">
+    <div class="introduce-col1 mt-5 row">
         <div class="col-12 col-md-8 border-right">
             <div class="introduce-header text-center">
                 <p class="h3 my-3">Công ty TNHH Dịch vụ Logistics & Thương mại Hoàng Minh</p>
-                <div>
+                <div data-aos="fade-right">
                     <img src="./images/banner/banner2.jpg" alt="" class="container">
                 </div>
             </div>
-
             <div class="introduce-bookmark">
-                <ul class="introduce-bookmark-shadow">
+                <ul class="introduce-bookmark-shadow pl-3">
                     <li>
                         <a href="#first">Công ty TNHH Dịch vụ Logistics & Thương mại Hoàng Minh</a>
                         <ul>
@@ -27,8 +25,9 @@
                 </ul>
             </div>
             <div id="first" class="introduce-content container">
-                <p class="title text-center">Công ty TNHH Dịch vụ Logistics & Thương mại Hoàng Minh</p>
-                <span>
+                <p class="title text-center" data-aos="slide-up">Công ty TNHH Dịch vụ Logistics & Thương mại Hoàng Minh
+                </p>
+                <span data-aos="fade-left">
                     Thành lập từ năm 2019, tuy tuổi đời của công ty còn ngắn hạn đã có những phát triển tiến bộ trong
                     những
                     công việc với đối tác khách hàng, <br>
@@ -41,12 +40,11 @@
                     khách hàng.
                 </span>
                 <div>
-                    <img src="./images/banner/banner3.png" alt="" class="container">
+                    <img src="./images/banner/banner3.png" alt="" class="container mt-3" data-aos="zoom-in">
                 </div>
             </div>
         </div>
-
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4" data-aos="fade-left">
             <div class="menu">
                 <div class="menu-list">
                     <div class="menu-title">
@@ -60,7 +58,6 @@
                         <li><a href="">Dịch vụ vận tải hàng không đi Brazil giá rẻ</a></li>
                     </div>
                 </div>
-
                 <div class="menu-list">
                     <div class="menu-title">
                         <p class="h5">Dịch vụ vận tải hàng không</p>
@@ -73,7 +70,6 @@
                         <li><a href="">Dịch vụ vận tải hàng không đi Brazil giá rẻ</a></li>
                     </div>
                 </div>
-
                 <div class="menu-list">
                     <div class="menu-title">
                         <p class="h5">Dịch vụ vận tải hàng không</p>
@@ -86,7 +82,6 @@
                         <li><a href="">Dịch vụ vận tải hàng không đi Brazil giá rẻ</a></li>
                     </div>
                 </div>
-
                 <div class="menu-list">
                     <div class="menu-title">
                         <p class="h5">Dịch vụ vận tải hàng không</p>
@@ -101,11 +96,7 @@
                 </div>
             </div>
         </div>
-
-
-
     </div>
-
 </div>
 <!-- end introduce -->
 <?php include "../view/footer.php" ?>

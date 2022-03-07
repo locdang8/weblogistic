@@ -9,6 +9,7 @@ let dichvu_array = [
   new Dichvu("Dịch vụ COD"),
 ];
 
+// <<<<<<< HEAD
 const listMini = document.querySelector(".list-mini");
 // listSet để hiển thị menu dịch vụ
 const listSet = document.querySelector("#list-set");
@@ -28,7 +29,24 @@ window.addEventListener("DOMContentLoaded", function () {
   listMini.innerHTML = ten_dv;
   listSet.innerHTML = ten_dv2;
 });
+// =======
+// const listMini = document.querySelector(".list-mini");
+// // listSet để hiển thị menu dịch vụ
+// const listSet = document.querySelector(".list-set");
+// // dropdown để bật tắt menu dịch vụ
+// const dropDown = document.querySelector(".dropdown");
+// window.addEventListener("DOMContentLoaded", function () {
+//   let ten_dv = dichvu_array
+//     .map(function (element) {
+//       return `<li><a href="">${element.ten}</a></li>`;
+//     })
+//     .join("");
 
-dropDown.addEventListener("click", function () {
-  listSet.classList.toggle("active");
-});
+//   listMini.innerHTML = ten_dv;
+//   listSet.innerHTML = ten_dv;
+// });
+// >>>>>>> 23ed09f61caac612e5c2c01b73f005a44532673b
+
+// dropDown.addEventListener("click", function () {
+//   listSet.classList.toggle("active");
+// });

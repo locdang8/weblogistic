@@ -15,8 +15,5 @@ function showDichvu($pdo) {
 
 }
 
-$element = showDichvu($pdo);
-echo $element[1]["tendv"];
-
 
 ?>
