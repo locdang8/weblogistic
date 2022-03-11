@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700;900&display=swap');
+:root{
+	--bck_color1:  #385b7c;
+	--btn_color1: #4D77FF;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing:  border-box;
+	font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.container{
+	background: var(--bck_color1);
+	height: 100vh;
+	position: relative;
+}
+
+.form {
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	background: #fff;
+	border-radius: 20px;
+	box-shadow: 0px 0px 15px 2px #000;
+
+}
+.form .form__content {
+	width: 300px;
+}
+.form .form__content .form__element{
+	margin-top: 50px;
+	padding: 20px;
+}
+
+.form .form__content .form__element > div > label {
+	font-size: 1.3rem;
+}
+
+.form .form__content .form__element input[type="text"],
+.form .form__content .form__element input[type="password"]{
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #000;
+	outline: none;
+	font-size: 1.2rem;
+}
+
+.form .form__content .form__element input[type="submit"] {
+	width: 100%;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+	background: var(--btn_color1);
+	padding: 10px;
+	font-size: 1.3rem;
+}
+
+.form .form__content .form__title > h1 {
+	text-align: center;
+	text-transform: capitalize;
+}

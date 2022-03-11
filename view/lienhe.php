@@ -103,7 +103,7 @@
 			</div>
 		</div>
 		
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="inputAddress">Địa chỉ</label>
                 <input type="text" class="form-control" id="inputAddress2">
             </div>
@@ -133,7 +133,7 @@
                 </div>
             </div>
             <button type="submit" class="btn btn-primary btn-sm|btn-lg">Gửi liên hệ</button>
-        </form>
+        </form> -->
     </div>
 </div>
 <?php  $pdo = null;?>

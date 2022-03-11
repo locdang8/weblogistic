@@ -1,9 +1,13 @@
 <?php 
 
 $servername = "localhost";
+
 $username = "root";
+
 $password = "";
+
 $pdo = "";
+
 try {
 //$pdo là đối tượng kết nối với mysql
 
@@ -13,7 +17,7 @@ try {
 
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-  echo "Connected successfully";
+  // echo "Connected successfully";
 
 } catch(PDOException $e) {
 
