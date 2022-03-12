@@ -4,20 +4,6 @@ require '../model/thuvien.php';
 
 session_start();
 if($_SERVER['REQUEST_METHOD'] == "POST") {
-	// if(isset($_POST['username']) && isset($_POST['password'])) {
-	// 	$username = $_POST['username'];
-	// 	$password = md5($_POST['password']);
-	// 	$row  = showItem($pdo, "user", $username, $password);
-	// 	echo $row;
-	// 	if($row > 0) {
-	// 		$_SESSION['username'] = $username;
-	// 		// echo "okok";
-	// 	}
-	// 	else {
-	// 		$error = "Tài khoản hoặc mật khẩu không đúng!!";
-	// 		session_destroy();
-	// 	}
-	// } 
 	if(isset($_POST['username']) && isset($_POST['password'])) {
 		$username = $_POST['username'];
 		$password = md5($_POST['password']);
@@ -35,9 +21,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 		}
 	}
 } 
-// else {
-// 	echo "not ok";
-// }
 ?>
 
 <!DOCTYPE html>
