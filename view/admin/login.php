@@ -13,7 +13,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 		$count = showItem($pdo, "user", $username, $password);
 		if($count > 0) {
 			$_SESSION['username'] = $username;
-			// header("location: http://localhost/weblogistic/view/gioithieu.php");
+			header("location: /weblogistic/controller/admin.php");
 
 		} else {
 			$error = "Tài khoản hoặc mật khẩu không đúng!!";
