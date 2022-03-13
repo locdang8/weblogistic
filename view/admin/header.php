@@ -49,14 +49,14 @@ if(!empty($_SESSION['username'])) {
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav">
             <li class="active"><a href="/weblogistic/controller/admin.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li><a href="charts.html"><i class="fa fa-bar-chart-o"></i> Charts</a></li>
-            <li><a href="tables.html"><i class="fa fa-table"></i> Tables</a></li>
-            <li><a href="forms.html"><i class="fa fa-edit"></i> Forms</a></li>
-            <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
-            <li><a href="bootstrap-elements.html"><i class="fa fa-desktop"></i> Bootstrap Elements</a></li>
-            <li><a href="bootstrap-grid.html"><i class="fa fa-wrench"></i> Bootstrap Grid</a></li>
-            <li><a href="blank-page.html"><i class="fa fa-file"></i> Blank Page</a></li>
-            <li class="dropdown">
+            <li><a href="admin.php?controller=dichvu"><i class="fa fa-file-o"></i> Dịch vụ</a></li>
+            <li><a href="admin.php?controller=tintuc"><i class="fa fa-table"></i> Tin tức</a></li>
+            <li><a href="admin.php?controller=tieumuc"><i class="fa fa-edit"></i>Tiểu mục</a></li>
+            <li><a href="admin.php?controller=dongia"><i class="fa fa-check-square"></i>Đơn báo giá</a></li>
+            <li><a href="admin.php?controller=khachhang"><i class="fa fa-desktop"></i>Khách hàng</a></li>
+            <!-- <li><a href=""><i class="fa fa-wrench"></i> Bootstrap Grid</a></li> -->
+            <!-- <li><a href=""><i class="fa fa-file"></i> Blank Page</a></li> -->
+            <!-- <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Dropdown Item</a></li>
@@ -64,11 +64,11 @@ if(!empty($_SESSION['username'])) {
                 <li><a href="#">Third Item</a></li>
                 <li><a href="#">Last Item</a></li>
               </ul>
-            </li>
+            </li> -->
           </ul>
 
           <ul class="nav navbar-nav navbar-right navbar-user">
-            <li class="dropdown messages-dropdown">
+            <!-- <li class="dropdown messages-dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li class="dropdown-header">7 New Messages</li>
@@ -101,8 +101,8 @@ if(!empty($_SESSION['username'])) {
                 <li class="divider"></li>
                 <li><a href="#">View Inbox <span class="badge">7</span></a></li>
               </ul>
-            </li>
-            <li class="dropdown alerts-dropdown">
+            </li> -->
+            <!-- <li class="dropdown alerts-dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts <span class="badge">3</span> <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Default <span class="label label-default">Default</span></a></li>
@@ -114,7 +114,7 @@ if(!empty($_SESSION['username'])) {
                 <li class="divider"></li>
                 <li><a href="#">View All</a></li>
               </ul>
-            </li>
+            </li> -->
             <li class="dropdown user-dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $username;?> <b class="caret"></b></a>
               <ul class="dropdown-menu">

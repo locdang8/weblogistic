@@ -2,7 +2,18 @@
 
       <div id="page-wrapper">
 
-        <div class="row">
+        <?php 
+          if(isset($_GET['controller'])) {
+            $path = $_GET['controller'].".php";
+            if(file_exists("../controller/$path")) {
+              include "../controller/$path";
+            } else {
+              $path="404.php";
+              include "../controller/$path";
+            }
+          }
+        ?>
+        <!-- <div class="row">
           <div class="col-lg-12">
             <h1>Dashboard <small>Statistics Overview</small></h1>
             <ol class="breadcrumb">
@@ -13,9 +24,10 @@
               Welcome to SB Admin by <a class="alert-link" href="http://startbootstrap.com">Start Bootstrap</a>! Feel free to use this template for your admin needs! We are using a few different plugins to handle the dynamic tables and charts, so make sure you check out the necessary documentation links provided.
             </div>
           </div>
-        </div><!-- /.row -->
+        </div> -->
+        <!-- /.row -->
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-lg-3">
             <div class="panel panel-info">
               <div class="panel-heading">
@@ -124,9 +136,10 @@
               </a>
             </div>
           </div>
-        </div><!-- /.row -->
+        </div> -->
+        <!-- /.row -->
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-lg-12">
             <div class="panel panel-primary">
               <div class="panel-heading">
@@ -137,9 +150,10 @@
               </div>
             </div>
           </div>
-        </div><!-- /.row -->
+        </div> -->
+        <!-- /.row -->
 
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-lg-4">
             <div class="panel panel-primary">
               <div class="panel-heading">
@@ -273,9 +287,11 @@
               </div>
             </div>
           </div>
-        </div><!-- /.row -->
+        </div> -->
+        <!-- /.row -->
 
-      </div><!-- /#page-wrapper -->
+      </div>
+      <!-- /#page-wrapper -->
 
     </div><!-- /#wrapper -->
 
