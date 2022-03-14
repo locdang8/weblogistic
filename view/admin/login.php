@@ -44,7 +44,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 					<input type="text" name="username" placeholder="Nhập tài khoản" required>
 					<?php 
 					if(isset($error)) {
-						echo "<span>".$error."</span>";
+						echo "<span style='color:red'>".$error."</span>";
 					}
 					?>
 				</div>
@@ -54,7 +54,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 					<input type="password" name="password" placeholder="Nhập mật khẩu" required>
 					<?php 
 					if(isset($error)) {
-						echo "<span>".$error."</span>";
+						echo "<span style='color:red'>".$error."</span>";
 					}
 					?>
 				</div>
