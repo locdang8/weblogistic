@@ -1,6 +1,6 @@
-<div class="home text-center container-fluid mx-0 px-0">
+<div class="home text-center container-fluid mx-0 px-0 mt-5">
     <!-- slide  -->
-    <div class="silde">
+    <div class="silde mt-2">
         <div class="bd-example">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -49,7 +49,7 @@
     <!--  -->
     <div class="home-content mt-4">
         <!-- grid Gioi thieu dich vu -->
-        <div class=" home-introduce row text justify-content-center">
+        <div class=" home-introduce row text justify-content-center container">
 
             <div class="col-md-6 col-xl-4 col-sm-12  home-introduce__item">
                 <div class="introduce-image">
@@ -161,7 +161,7 @@
                                 <p>Thủ tục xuất quần áo bảo hộ đi quốc tế chi tiết nhất</p>
                             </div>
                             <div class="item-review__msg">
-                                <p>CHUYỂN PHÁT NHANH DHL, FEDEX, TNT, UPS, VIETTELPOST EMS INDOCHINAPOST Cần Thơ là
+                                <p>Cần Thơ là
                                     thành phố trực thuộc Trung Ương, nằm ở vị trí trung tâm của vùng đồng bằng sông Cửu
                                     Long. Vốn được mệnh danh là Tây Đô – Thủ phủ của miền Tây Nam Bộ từ hơn trăm năm
                                     trước, giờ đây Cần…</p>
@@ -177,7 +177,7 @@
                                 <p>Thủ tục xuất quần áo bảo hộ đi quốc tế chi tiết nhất</p>
                             </div>
                             <div class="item-review__msg">
-                                <p>CHUYỂN PHÁT NHANH DHL, FEDEX, TNT, UPS, VIETTELPOST EMS INDOCHINAPOST Cần Thơ là
+                                <p>Cần Thơ là
                                     thành phố trực thuộc Trung Ương, nằm ở vị trí trung tâm của vùng đồng bằng sông Cửu
                                     Long. Vốn được mệnh danh là Tây Đô – Thủ phủ của miền Tây Nam Bộ từ hơn trăm năm
                                     trước, giờ đây Cần…</p>
@@ -193,7 +193,7 @@
                                 <p>Thủ tục xuất quần áo bảo hộ đi quốc tế chi tiết nhất</p>
                             </div>
                             <div class="item-review__msg">
-                                <p>CHUYỂN PHÁT NHANH DHL, FEDEX, TNT, UPS, VIETTELPOST EMS INDOCHINAPOST Cần Thơ là
+                                <p>Cần Thơ là
                                     thành phố trực thuộc Trung Ương, nằm ở vị trí trung tâm của vùng đồng bằng sông Cửu
                                     Long. Vốn được mệnh danh là Tây Đô – Thủ phủ của miền Tây Nam Bộ từ hơn trăm năm
                                     trước, giờ đây Cần…</p>
@@ -218,7 +218,7 @@
                                 <p>Chuyển phát nhanh Quốc tế Nội địa tại Cần Thơ</p>
                             </div>
                             <div class="item-review__msg">
-                                <p>CHUYỂN PHÁT NHANH DHL, FEDEX, TNT, UPS, VIETTELPOST EMS INDOCHINAPOST Cần Thơ là
+                                <p>Cần Thơ là
                                     thành phố trực thuộc Trung Ương, nằm ở vị trí trung tâm của vùng đồng bằng sông Cửu
                                     Long. Vốn được mệnh danh là Tây Đô – Thủ phủ của miền Tây Nam Bộ từ hơn trăm năm
                                     trước, giờ đây Cần…</p>
@@ -234,7 +234,7 @@
                                 <p>Chuyển phát nhanh Quốc tế Nội địa tại Cần Thơ</p>
                             </div>
                             <div class="item-review__msg">
-                                <p>CHUYỂN PHÁT NHANH DHL, FEDEX, TNT, UPS, VIETTELPOST EMS INDOCHINAPOST Cần Thơ là
+                                <p>Cần Thơ là
                                     thành phố trực thuộc Trung Ương, nằm ở vị trí trung tâm của vùng đồng bằng sông Cửu
                                     Long. Vốn được mệnh danh là Tây Đô – Thủ phủ của miền Tây Nam Bộ từ hơn trăm năm
                                     trước, giờ đây Cần…</p>
@@ -250,7 +250,7 @@
                                 <p>Chuyển phát nhanh Quốc tế Nội địa tại Cần Thơ</p>
                             </div>
                             <div class="item-review__msg">
-                                <p>CHUYỂN PHÁT NHANH DHL, FEDEX, TNT, UPS, VIETTELPOST EMS INDOCHINAPOST Cần Thơ là
+                                <p>Cần Thơ là
                                     thành phố trực thuộc Trung Ương, nằm ở vị trí trung tâm của vùng đồng bằng sông Cửu
                                     Long. Vốn được mệnh danh là Tây Đô – Thủ phủ của miền Tây Nam Bộ từ hơn trăm năm
                                     trước, giờ đây Cần…</p>
@@ -335,7 +335,7 @@
                                 <p>Vận chuyển hải sản Đà Nẵng đi Hà Nội bằng đường hàng không giá rẻ</p>
                             </div>
                             <div class="item-review__msg">
-                                <p>CHUYỂN PHÁT NHANH DHL, FEDEX, TNT, UPS, VIETTELPOST EMS INDOCHINAPOST Cần Thơ là
+                                <p>Cần Thơ là
                                     thành phố trực thuộc Trung Ương, nằm ở vị trí trung tâm của vùng đồng bằng sông Cửu
                                     Long. Vốn được mệnh danh là Tây Đô – Thủ phủ của miền Tây Nam Bộ từ hơn trăm năm
                                     trước, giờ đây Cần…</p>
@@ -351,7 +351,7 @@
                                 <p>Vận chuyển hải sản Đà Nẵng đi Hà Nội bằng đường hàng không giá rẻ</p>
                             </div>
                             <div class="item-review__msg">
-                                <p>CHUYỂN PHÁT NHANH DHL, FEDEX, TNT, UPS, VIETTELPOST EMS INDOCHINAPOST Cần Thơ là
+                                <p>Cần Thơ là
                                     thành phố trực thuộc Trung Ương, nằm ở vị trí trung tâm của vùng đồng bằng sông Cửu
                                     Long. Vốn được mệnh danh là Tây Đô – Thủ phủ của miền Tây Nam Bộ từ hơn trăm năm
                                     trước, giờ đây Cần…</p>
@@ -367,7 +367,7 @@
                                 <p>Vận chuyển hải sản Đà Nẵng đi Hà Nội bằng đường hàng không giá rẻ</p>
                             </div>
                             <div class="item-review__msg">
-                                <p>CHUYỂN PHÁT NHANH DHL, FEDEX, TNT, UPS, VIETTELPOST EMS INDOCHINAPOST Cần Thơ là
+                                <p>Cần Thơ là
                                     thành phố trực thuộc Trung Ương, nằm ở vị trí trung tâm của vùng đồng bằng sông Cửu
                                     Long. Vốn được mệnh danh là Tây Đô – Thủ phủ của miền Tây Nam Bộ từ hơn trăm năm
                                     trước, giờ đây Cần…</p>
@@ -393,7 +393,7 @@
                                 <p>Chuyển phát nhanh Quốc tế Nội địa tại Cần Thơ</p>
                             </div>
                             <div class="item-review__msg">
-                                <p>CHUYỂN PHÁT NHANH DHL, FEDEX, TNT, UPS, VIETTELPOST EMS INDOCHINAPOST Cần Thơ là
+                                <p>Cần Thơ là
                                     thành phố trực thuộc Trung Ương, nằm ở vị trí trung tâm của vùng đồng bằng sông Cửu
                                     Long. Vốn được mệnh danh là Tây Đô – Thủ phủ của miền Tây Nam Bộ từ hơn trăm năm
                                     trước, giờ đây Cần…</p>
@@ -410,7 +410,7 @@
                                 <p>Thủ tục xuất quần áo bảo hộ đi quốc tế chi tiết nhất</p>
                             </div>
                             <div class="item-review__msg">
-                                <p>CHUYỂN PHÁT NHANH DHL, FEDEX, TNT, UPS, VIETTELPOST EMS INDOCHINAPOST Cần Thơ là
+                                <p>Cần Thơ là
                                     thành phố trực thuộc Trung Ương, nằm ở vị trí trung tâm của vùng đồng bằng sông Cửu
                                     Long. Vốn được mệnh danh là Tây Đô – Thủ phủ của miền Tây Nam Bộ từ hơn trăm năm
                                     trước, giờ đây Cần…</p>
@@ -427,7 +427,7 @@
                                 <p>Thủ tục xuất quần áo bảo hộ đi quốc tế chi tiết nhất</p>
                             </div>
                             <div class="item-review__msg">
-                                <p>CHUYỂN PHÁT NHANH DHL, FEDEX, TNT, UPS, VIETTELPOST EMS INDOCHINAPOST Cần Thơ là
+                                <p>Cần Thơ là
                                     thành phố trực thuộc Trung Ương, nằm ở vị trí trung tâm của vùng đồng bằng sông Cửu
                                     Long. Vốn được mệnh danh là Tây Đô – Thủ phủ của miền Tây Nam Bộ từ hơn trăm năm
                                     trước, giờ đây Cần…</p>
