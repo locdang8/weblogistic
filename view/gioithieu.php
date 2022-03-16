@@ -1,16 +1,16 @@
 <?php include "../view/header.php" ?>
 <link rel="stylesheet" href="../view/css/base.css">
-<div class="section__image">
+<div class="section__image container mt-5">
     <img src="./images/banner/banner-van-tai.jpg" alt="" class="container-fluid">
 </div>
 <!-- start introduce -->
-<div class="introduce my-5 border-top">
+<div class="introduce my-5 border-top container">
     <div class="introduce-col1 mt-5 row">
-        <div class="col-12 col-md-8 border-right">
+        <div class="col-12 col-md-8">
             <div class="introduce-header text-center">
-                <p class="h3 my-3">Công ty TNHH Dịch vụ Logistics & Thương mại Hoàng Minh</p>
+                <p class="my-3" style="font-size: 20px; color: darkcyan;">Công ty TNHH Dịch vụ Logistics & Thương mại Hoàng Minh</p>
                 <div data-aos="fade-right">
-                    <img src="./images/banner/banner2.jpg" alt="" class="container">
+                    <img src="./images/banner/banner2.jpg" alt="" class="container rounded">
                 </div>
             </div>
             <div class="introduce-bookmark">

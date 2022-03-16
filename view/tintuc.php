@@ -2,21 +2,21 @@
 <link rel="stylesheet" href="../view/css/base.css">
 <div class="news container-fluid">
     <!-- image------------- -->
-    <div class="news-image text-center">
-        <img class="container-fluid mx-0 px-0"
-            src="https://saonamlogistics.com/wp-content/uploads/2019/08/logistics.5c06fe2e0624d.jpg" alt="">
+    <div class="news-image text-center mt-5">
+        <img class="container mx-0 px-0"
+            src="https://file1.dangcongsan.vn/DATA/0/2018/02/logistics-09_13_38_326.jpg" alt="">
     </div>
     <!-- --------------------- -->
     <!-- data -->
-    <div class="news-data container-fluid mt-5">
-        <div class="news-data-title text-center">
+    <div class="news-data container mt-2">
+        <div class="news-data-title text-center py-4">
             <p class="h5 font-weight-bold border-bottom mb-0">Tin tức</p>
         </div>
         <div class="news-data-grid row mt-10 mx-md-4" data-aos="fade-right">
-            <div class="col-md-8 border-right">
+            <div class="col-md-8">
                 <div class="row">
                     <!-- bai viet .......   -->
-                    <div class="col-md-6 col-12 news-data-item">
+                    <div class="col-xl-5 col-12 news-data-item">
                         <div class="data-image">
                             <img class="container mx-0 px-0"
                                 src="https://bestcargo.vn/wp-content/uploads/2022/01/Van-chuyen-hang-hoa-Bac-Nam-bang-tau-hoa.jpeg"
@@ -29,7 +29,7 @@
                             <p>Dịch vụ tư vấn xuất nhập khẩu Trong trường hợp nào doanh nghiệp xuất nhập...</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 news-data-item">
+                    <div class="col-xl-5 col-12 news-data-item">
                         <div class="data-image">
                             <img class="container mx-0 px-0"
                                 src="https://bestcargo.vn/wp-content/uploads/2022/01/Van-chuyen-hang-hoa-Bac-Nam-bang-tau-hoa.jpeg"
@@ -42,7 +42,7 @@
                             <p>Dịch vụ tư vấn xuất nhập khẩu Trong trường hợp nào doanh nghiệp xuất nhập...</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 news-data-item">
+                    <div class="col-xl-5 col-12 news-data-item">
                         <div class="data-image">
                             <img class="container mx-0 px-0"
                                 src="https://bestcargo.vn/wp-content/uploads/2022/01/Van-chuyen-hang-hoa-Bac-Nam-bang-tau-hoa.jpeg"
@@ -55,7 +55,7 @@
                             <p>Dịch vụ tư vấn xuất nhập khẩu Trong trường hợp nào doanh nghiệp xuất nhập...</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 news-data-item">
+                    <div class="col-xl-5 col-12 news-data-item">
                         <div class="data-image">
                             <img class="container mx-0 px-0"
                                 src="https://bestcargo.vn/wp-content/uploads/2022/01/Van-chuyen-hang-hoa-Bac-Nam-bang-tau-hoa.jpeg"
