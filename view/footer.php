@@ -1,47 +1,47 @@
 <footer>
     <div class="footer">
         <div class="footer-ship">
-            <div class="footer-ship-list row">
-                <div class="footer__item  col-sm-6 col-xl-4 justify-content-center" data-aos="slide-up">
+            <div class="footer-ship-list row mx-5">
+                <div class="footer__item  col-sm-6 col-xl-4 justify-content-center px-5" data-aos="slide-up">
                     <i class="fa-solid fa-square-pen"></i>
                     <div>
                         <strong>Chiết khấu ưu đãi</strong>
-                        <p>Chưa biết viết gì</p>
+                        <p class="text-left">Bestcargo.vn luôn có ưu đãi với các khách hàng lớn và khách hàng thường xuyên, mức phí này luôn đảm bảo tốt nhất tại Việt Nam.</p>
                     </div>
                 </div>
-                <div class="footer__item col-sm-6 col-xl-4 justify-content-center" data-aos="slide-up">
+                <div class="footer__item col-sm-6 col-xl-4 justify-content-center px-5" data-aos="slide-up">
                     <i class="fa-solid fa-circle-check"></i>
                     <div>
                         <strong>Chất lượng dịch vụ</strong>
-                        <p>Chưa biết viết gì</p>
+                        <p class="text-left">Bestcargo.vn luôn đặt chất lượng dịch vụ là lý do tồn tại của chúng tôi đối với các dịch vụ Air, Sea, Rail, Kho vận và Trucking nội địa và Quốc Tế</p>
                     </div>
                 </div>
-                <div class="footer__item col-sm-6 col-xl-4 justify-content-center" data-aos="slide-up">
+                <div class="footer__item col-sm-6 col-xl-4 justify-content-center px-5" data-aos="slide-up">
                     <i class="fa-solid fa-clock"></i>
                     <div>
                         <strong>Thời gian giao hàng</strong>
-                        <p>Chưa biết viết gì</p>
+                        <p class="text-left">Chưa biết viết gì</p>
                     </div>
                 </div>
-                <div class="footer__item col-sm-6 col-xl-4 justify-content-center" data-aos="slide-up">
+                <div class="footer__item col-sm-6 col-xl-4 justify-content-center px-5" data-aos="slide-up">
                     <i class="fa-solid fa-money-bill-1"></i>
                     <div>
                         <strong> Giá cả phải chăng</strong>
-                        <p>Chưa biết viết gì</p>
+                        <p class="text-left">Chưa biết viết gì</p>
                     </div>
                 </div>
-                <div class="footer__item col-sm-6 col-xl-4 justify-content-center" data-aos="slide-up">
+                <div class="footer__item col-sm-6 col-xl-4 justify-content-center px-5" data-aos="slide-up">
                     <i class="fa-solid fa-cubes"></i>
                     <div>
                         <strong>Dịch vụ khách hàng</strong>
-                        <p>Chưa biết viết gì</p>
+                        <p class="text-left">Bestcargo.vn luôn luôn có những chính sách hậu mãi, chế độ bảo hiểm hàng hóa, chăm sóc khách hàng khách hàng thân thiết.</p>
                     </div>
                 </div>
-                <div class="footer__item col-sm-6 col-xl-4 justify-content-center" data-aos="slide-up">
+                <div class="footer__item col-sm-6 col-xl-4 justify-content-center px-5" data-aos="slide-up">
                     <i class="fa-brands fa-paypal"></i>
                     <div>
                         <strong>Thanh toán an toàn</strong>
-                        <p>Chưa biết viết gì</p>
+                        <p class="text-left">Chưa biết viết gì</p>
                     </div>
                 </div>
             </div>

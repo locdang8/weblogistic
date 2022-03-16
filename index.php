@@ -1,7 +1,6 @@
 <?php 
 
-header("Location: ./controller/index.php");
-
+header("Location: ../weblogistic/controller/index.php");
 ?>
 <!-- jjjdj -->
 <!-- them nua -->

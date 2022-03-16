@@ -49,9 +49,9 @@
     <!--  -->
     <div class="home-content mt-4">
         <!-- grid Gioi thieu dich vu -->
-        <div class=" home-introduce row text justify-content-center container">
+        <div class=" home-introduce row text justify-content-center container-fluid">
 
-            <div class="col-md-6 col-xl-4 col-sm-12  home-introduce__item">
+            <div class="col-sm-5  home-introduce__item">
                 <div class="introduce-image">
                     <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
                 </div>
@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-xl-4 col-sm-12 home-introduce__item">
+            <div class="col-sm-5 home-introduce__item">
                 <div class="introduce-image">
                     <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
                 </div>
@@ -80,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-4 col-sm-12 home-introduce__item">
+            <div class="col-sm-5 home-introduce__item">
                 <div class="introduce-image">
                     <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
                 </div>
@@ -94,35 +94,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-4 col-sm-12 home-introduce__item">
-                <div class="introduce-image">
-                    <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
-                </div>
-                <div class="introduce-review">
-                    <div class="introduce-review__title">
-                        <p>GIAO NHẬN HÀNG HÓA</p>
-                    </div>
-                    <div class="introduce-review__msg">
-                        <p>Dịch vụ giao nhận - Cung cấp dịch vụ giao nhận vận chuyển đường bộ, đường sắt, đường biển,
-                            đường không với chất lượng dịch vụ và giá cả tốt nhất</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-4 col-sm-12 home-introduce__item">
-                <div class="introduce-image">
-                    <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
-                </div>
-                <div class="introduce-review">
-                    <div class="introduce-review__title">
-                        <p>GIAO NHẬN HÀNG HÓA</p>
-                    </div>
-                    <div class="introduce-review__msg">
-                        <p>Dịch vụ giao nhận - Cung cấp dịch vụ giao nhận vận chuyển đường bộ, đường sắt, đường biển,
-                            đường không với chất lượng dịch vụ và giá cả tốt nhất</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-4 col-sm-12 home-introduce__item">
+            <div class="col-sm-5 home-introduce__item">
                 <div class="introduce-image">
                     <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
                 </div>
@@ -151,7 +123,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 col-xl-4 col-sm-12">
+                    <div class="col-md-6 col-xl-3 col-sm-12">
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2020/04/thu-tuc-xuat-quan-ao-bao-ho-y-te.jpg"
                                 alt="">
@@ -168,7 +140,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-4 col-sm-12">
+                    <div class="col-md-6 col-xl-3 col-sm-12">
+                        <div class="item-image">
+                            <img src="https://bestcargo.vn/wp-content/uploads/2020/04/thu-tuc-xuat-quan-ao-bao-ho-y-te.jpg"
+                                alt="">
+                        </div>
+                        <div class="item-review">
+                            <div class="item-review__title">
+                                <p>Thủ tục xuất quần áo bảo hộ đi quốc tế chi tiết nhất</p>
+                            </div>
+                            <div class="item-review__msg">
+                                <p>Cần Thơ là
+                                    thành phố trực thuộc Trung Ương, nằm ở vị trí trung tâm của vùng đồng bằng sông Cửu
+                                    Long. Vốn được mệnh danh là Tây Đô – Thủ phủ của miền Tây Nam Bộ từ hơn trăm năm
+                                    trước, giờ đây Cần…</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 col-sm-12">
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2020/08/long-den-2.jpg" alt="">
                         </div>
@@ -184,7 +173,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-4 col-sm-12">
+                    <div class="col-md-6 col-xl-3 col-sm-12">
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2020/08/long-den-2.jpg" alt="">
                         </div>
@@ -209,7 +198,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 col-xl-4 col-sm-12">
+                    <div class="col-md-6 col-xl-3 col-sm-12">
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2018/03/dịch-vụ-hải-quan.jpg" alt="">
                         </div>
@@ -225,7 +214,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-4 col-sm-12">
+                    <div class="col-md-6 col-xl-3 col-sm-12">
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2018/03/dịch-vụ-hải-quan.jpg" alt="">
                         </div>
@@ -241,7 +230,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-4 col-sm-12">
+                    <div class="col-md-6 col-xl-3 col-sm-12">
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2018/03/dịch-vụ-hải-quan.jpg" alt="">
                         </div>
@@ -266,7 +255,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 col-xl-4 col-sm-12">
+                    <div class="col-md-6 col-xl-3 col-sm-12">
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2016/11/xuat-khau-gao1.jpg" alt="">
                         </div>
@@ -283,7 +272,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-4 col-sm-12">
+                    <div class="col-md-6 col-xl-3 col-sm-12">
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2016/11/xuat-khau-gao1.jpg" alt="">
                         </div>
@@ -300,7 +289,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-4 col-sm-12">
+                    <div class="col-md-6 col-xl-3 col-sm-12">
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2016/11/xuat-khau-gao1.jpg" alt="">
                         </div>
@@ -326,7 +315,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 col-xl-4 col-sm-12">
+                    <div class="col-md-6 col-xl-3 col-sm-12">
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2022/02/chuyen-hang-dong-lanh.jpg" alt="">
                         </div>
@@ -342,7 +331,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-4 col-sm-12">
+                    <div class="col-md-6 col-xl-3 col-sm-12">
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2022/02/chuyen-hang-dong-lanh.jpg" alt="">
                         </div>
@@ -358,7 +347,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-4 col-sm-12">
+                    <div class="col-md-6 col-xl-3 col-sm-12">
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2022/02/chuyen-hang-dong-lanh.jpg" alt="">
                         </div>
@@ -383,7 +372,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 col-xl-4 col-sm-12">
+                    <div class="col-md-6 col-xl-3 col-sm-12">
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2020/04/thu-tuc-xuat-quan-ao-bao-ho-y-te.jpg"
                                 alt="">
@@ -400,7 +389,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-4 col-sm-12 ">
+                    <div class="col-md-6 col-xl-3 col-sm-12 ">
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2020/04/thu-tuc-xuat-quan-ao-bao-ho-y-te.jpg"
                                 alt="">
@@ -417,7 +406,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xl-4 col-sm-12 ">
+                    <div class="col-md-6 col-xl-3 col-sm-12 ">
                         <div class="item-image">
                             <img src="https://bestcargo.vn/wp-content/uploads/2020/04/thu-tuc-xuat-quan-ao-bao-ho-y-te.jpg"
                                 alt="">
