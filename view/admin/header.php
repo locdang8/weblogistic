@@ -1,4 +1,7 @@
 <?php 
+
+require '../model/thuvien.php';
+
 session_start();
 
 if(!empty($_SESSION['username'])) {
@@ -26,6 +29,8 @@ if(!empty($_SESSION['username'])) {
     <!-- Page Specific CSS -->
     <!-- <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css"> -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <!-- add custom table -->
+    <link rel="stylesheet" href="../view/css/admin.css">
   </head>
 
   <body>
@@ -52,7 +57,7 @@ if(!empty($_SESSION['username'])) {
             <li><a href="admin.php?controller=dichvu"><i class="fa fa-file-o"></i> Dịch vụ</a></li>
             <li><a href="admin.php?controller=tintuc"><i class="fa fa-table"></i> Tin tức</a></li>
             <li><a href="admin.php?controller=tieumuc"><i class="fa fa-edit"></i>Tiểu mục</a></li>
-            <li><a href="admin.php?controller=dongia"><i class="fa fa-check-square"></i>Đơn báo giá</a></li>
+            <li><a href="admin.php?controller=yeucaudongia"><i class="fa fa-check-square"></i>Đơn báo giá</a></li>
             <li><a href="admin.php?controller=khachhang"><i class="fa fa-desktop"></i>Khách hàng</a></li>
             <!-- <li><a href=""><i class="fa fa-wrench"></i> Bootstrap Grid</a></li> -->
             <!-- <li><a href=""><i class="fa fa-file"></i> Blank Page</a></li> -->

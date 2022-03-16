@@ -26,4 +26,21 @@ function showItem($pdo,$nameTable, $username, $password) {
 	return $count;
 }
 
+
+function showDatabase($pdo, $table) {
+	$select = "SELECT * FROM $table";
+	$stmt = $pdo->prepare($select);
+	$stmt->execute();
+	// fetch dữ liệu theo dạng hàng với các mảng liên kết với nhau, để truy cập vào chỉ cần ghi tên cột vào là có thể hiện giá trị
+	$element = $stmt->fetchAll(PDO::FETCH_ASSOC);
+	$pdo = null;
+	return $element;
+
+}
+
+
+//hiển thị nội dung bảng ghi khi được ấn update
+// 
+// update bản ghi
+// function then
 ?>

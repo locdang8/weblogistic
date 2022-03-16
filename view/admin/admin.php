@@ -7,10 +7,11 @@
             $path = $_GET['controller'].".php";
             if(file_exists("../controller/$path")) {
               include "../controller/$path";
-            } else {
-              $path="404.php";
-              include "../controller/$path";
-            }
+            } 
+            // else {
+            //   $path="404.php";
+            //   include "../controller/$path";
+            // }
           }
         ?>
         <!-- <div class="row">

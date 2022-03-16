@@ -1,5 +1,6 @@
 <!-- JavaScript -->
-<script src="/weblogistic/view/js/jquery-1.10.2.js"></script>
+  <script src="../view/app/setting.js"></script>
+  <script src="/weblogistic/view/js/jquery-1.10.2.js"></script>
     <script src="/weblogistic/view/js/bootstrap.js"></script>
 
     <!-- Page Specific Plugins -->

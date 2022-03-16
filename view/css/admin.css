@@ -1,0 +1,112 @@
+.styled-table {
+    /* border-collapse: collapse; table bị loại bỏ khoảng trống
+        chỉ còn lại đường viền 
+    */
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background: #009879;
+    color: #fff;
+    text-align: left;
+}
+
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table th {
+    font-size: 2.5rem;
+}
+
+.styled-table td {
+    font-size: 1.5rem;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.option {
+    text-align: center;
+}
+
+.option span {
+    color: blue;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.option span img{
+    width: 20px;
+}
+
+.disable {
+    display: none;
+}
+
+.active {
+    display: block !important;
+}
+
+.modal__layout {
+    position: relative;
+}
+
+.btn__close{
+    
+    border: none;
+    cursor: pointer;
+}
+
+.modal__layout div .modal__form { 
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    /* max-width: 700px; */
+}
+
+.modal__layout div .modal__form > div > input {
+    width: 90%;
+
+}
+
+.modal__layout div .modal__form > label {
+    margin: 10px;
+}
+
+.modal__layout div .modal__form > div  {
+    margin: 10px;
+    padding-left: 20px;
+}
+
+.modal__layout div .modal__form > div > input[type="submit"] {
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #445c7c;
+    color: #fff;
+    font-size: 1.5rem;
+    height: 30px;
+} 
+
+
+
