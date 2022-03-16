@@ -49,9 +49,9 @@
     <!--  -->
     <div class="home-content mt-4">
         <!-- grid Gioi thieu dich vu -->
-        <div class=" home-introduce row text justify-content-center container">
+        <div class=" home-introduce row text justify-content-center container-fluid">
 
-            <div class="col-md-6 col-xl-4 col-sm-12  home-introduce__item">
+            <div class="col-md-6 col-xl-3 col-sm-12  home-introduce__item">
                 <div class="introduce-image">
                     <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
                 </div>
@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 col-xl-4 col-sm-12 home-introduce__item">
+            <div class="col-md-6 col-xl-3 col-sm-12 home-introduce__item">
                 <div class="introduce-image">
                     <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
                 </div>
@@ -80,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-4 col-sm-12 home-introduce__item">
+            <div class="col-md-6 col-xl-3 col-sm-12 home-introduce__item">
                 <div class="introduce-image">
                     <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
                 </div>
@@ -94,7 +94,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-4 col-sm-12 home-introduce__item">
+            <div class="col-md-6 col-xl-3 col-sm-12 home-introduce__item">
                 <div class="introduce-image">
                     <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
                 </div>
@@ -108,7 +108,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-4 col-sm-12 home-introduce__item">
+            <div class="col-md-6 col-xl-3 col-sm-12 home-introduce__item">
                 <div class="introduce-image">
                     <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
                 </div>
@@ -122,7 +122,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-4 col-sm-12 home-introduce__item">
+            <div class="col-md-6 col-xl-3 col-sm-12 home-introduce__item">
                 <div class="introduce-image">
                     <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
                 </div>
