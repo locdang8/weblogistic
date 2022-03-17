@@ -4,13 +4,14 @@
             <th>Mã tin tức</th>
             <th>Tên tin tức</th>
             <th>Nội dung</th>
-            <th>Tùy chỉnh</th>
+            <th>Ngay dang</th>
+            <th>Tuy chinh</th>
         </tr>
     </thead>
     <tbody>
 
         <?php 
-            $table = "tintuc";
+            $table = "baiviet";
 
             $row = showDatabase($pdo, $table);
 
@@ -20,9 +21,10 @@
         ?>
 
             <tr>
-                <td><?php echo $value['madv'];?></td>
-                <td><?php echo $value['tendv'];?></td>
+                <td><?php echo $value['mabaiviet'];?></td>
+                <td><?php echo $value['tieude'];?></td>
                 <td><?php echo $value['noidung'];?></td>
+                <td><?php echo $value['ngaydang'];?></td>
                 <td class="option">
                     <span>
                         <a href=""><img src="../view/images/icon/update.svg" title="Cập nhật" alt="Cập nhật"></a>

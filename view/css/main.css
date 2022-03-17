@@ -330,9 +330,8 @@ i{
 	font-size: 1rem;
 }
 
-.data-image>img{
-	height: 200px;
-	object-fit: cover;
+.news-data-item{
+	position: relative;
 }
 .news-data-item>img{
 	background: #ccc;
@@ -374,10 +373,7 @@ i{
 .introduce {
     margin-top: 100px;
 }
-.data-image>img{
-	height: 200px;
-	object-fit: cover;
-}
+
 .data-image-advise{
 	height: 200px;
 	width: 100%;
@@ -386,6 +382,16 @@ i{
 	height: 100%;
 	object-fit: cover;
 	width: 100%;
+}
+.data-note >a{
+	color: var(--title-clr);
+	font-size: 16px;
+	margin: 10px 16px ;
+	font-weight: 550;
+	width: 90%;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
 }
 .data-note >p{
 	color: var(--title-clr);
@@ -410,7 +416,41 @@ i{
     -webkit-line-clamp: 2;
     line-height: 1.2rem;
 }
+.advise-data-item{
+	position: relative;
+}
+.buttonclick{
+	position: absolute;
+	top:  200px;
+	left: 90px;
+	visibility: hidden;
+}
+.buttonclick2{
+	position: absolute;
+	top:  200px;
+	left: 90px;
+	visibility: hidden;
+}
+.buttonclick,.buttonclick2{
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px !important;
+}
 
+.news-data-item:hover .buttonclick{
+	visibility: unset;
+	animation: dichuyen .5s forwards;
+}
+.advise-data-item:hover .buttonclick2{
+	visibility: unset;
+	animation: dichuyen .5s forwards;
+}
+@keyframes dichuyen{
+	from{
+		top: 200px;
+	}
+	to{
+		top: 120px;
+	}
+}
 .advise-data-item,.news-data-item{
 	background: var(--item__clr);
 	padding: 2px;
@@ -419,6 +459,7 @@ i{
 	border-radius: 10px;
 	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
+
 .news-data-item>img{
 	background: #ccc;
 	height: 100px;

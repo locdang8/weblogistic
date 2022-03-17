@@ -1,4 +1,8 @@
 <?php include "header.php"?>
+<?php 
+    require '../model/thuvien.php';
+
+?>
 <link rel="stylesheet" href="../view/css/base.css">
 <div class="news container-fluid">
     <!-- image------------- -->
@@ -16,58 +20,30 @@
             <div class="col-md-8">
                 <div class="row">
                     <!-- bai viet .......   -->
-                    <div class="col-xl-5 col-12 news-data-item">
-                        <div class="data-image">
-                            <img class="container mx-0 px-0"
+                    <?php 
+                    $table = "baiviet";
+
+            $row = showDatabase($pdo, $table);
+
+            foreach ($row as $value) {
+                # code...?>
+                        <div class="col-xl-5 col-12 news-data-item">
+                            <div class="data-image">
+                                <img class="container mx-0 px-0"
                                 src="https://bestcargo.vn/wp-content/uploads/2022/01/Van-chuyen-hang-hoa-Bac-Nam-bang-tau-hoa.jpeg"
                                 alt="">
+                            </div>
+                            <div class="data-note text-center">
+                                <p><?php echo $value['tieude']?></p>
+                            </div>
+                            <div class="data-title text-center">
+                                <p><?php echo $value['noidung']?></p>
+                            </div>
+                            <button class="buttonclick btn btn-success py-3 px-4">
+                                <a href="" style="color: #000; text-decoration: none; font-size: 14px;">Xem chi tiet</a>
+                            </button>
                         </div>
-                        <div class="data-note text-center">
-                            <p>Dịch vụ tư vấn xuất nhập khẩu</p>
-                        </div>
-                        <div class="data-title text-center">
-                            <p>Dịch vụ tư vấn xuất nhập khẩu Trong trường hợp nào doanh nghiệp xuất nhập...</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-12 news-data-item">
-                        <div class="data-image">
-                            <img class="container mx-0 px-0"
-                                src="https://bestcargo.vn/wp-content/uploads/2022/01/Van-chuyen-hang-hoa-Bac-Nam-bang-tau-hoa.jpeg"
-                                alt="">
-                        </div>
-                        <div class="data-note text-center">
-                            <p>Dịch vụ tư vấn xuất nhập khẩu</p>
-                        </div>
-                        <div class="data-title text-center">
-                            <p>Dịch vụ tư vấn xuất nhập khẩu Trong trường hợp nào doanh nghiệp xuất nhập...</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-12 news-data-item">
-                        <div class="data-image">
-                            <img class="container mx-0 px-0"
-                                src="https://bestcargo.vn/wp-content/uploads/2022/01/Van-chuyen-hang-hoa-Bac-Nam-bang-tau-hoa.jpeg"
-                                alt="">
-                        </div>
-                        <div class="data-note text-center">
-                            <p>Dịch vụ tư vấn xuất nhập khẩu</p>
-                        </div>
-                        <div class="data-title text-center">
-                            <p>Dịch vụ tư vấn xuất nhập khẩu Trong trường hợp nào doanh nghiệp xuất nhập...</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-12 news-data-item">
-                        <div class="data-image">
-                            <img class="container mx-0 px-0"
-                                src="https://bestcargo.vn/wp-content/uploads/2022/01/Van-chuyen-hang-hoa-Bac-Nam-bang-tau-hoa.jpeg"
-                                alt="">
-                        </div>
-                        <div class="data-note text-center">
-                            <p>Dịch vụ tư vấn xuất nhập khẩu</p>
-                        </div>
-                        <div class="data-title text-center">
-                            <p>Dịch vụ tư vấn xuất nhập khẩu Trong trường hợp nào doanh nghiệp xuất nhập...</p>
-                        </div>
-                    </div>
+                    <?php }?>
                     <!-- --------------- -->
                 </div>
             </div>
