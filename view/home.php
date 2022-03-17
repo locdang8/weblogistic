@@ -50,7 +50,7 @@
     <div class="home-content mt-4">
         <!-- grid Gioi thieu dich vu -->
         <div class=" home-introduce row text justify-content-center container-fluid">
-            <div class="col-md-6 col-xl-3 col-sm-12  home-introduce__item">
+            <div class="col-md-5 col-sm-12  home-introduce__item">
                 <div class="introduce-image">
                     <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
                 </div>
@@ -64,7 +64,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-3 col-sm-12 home-introduce__item">
+            <div class="col-md-5 col-sm-12 home-introduce__item">
                 <div class="introduce-image">
                     <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
                 </div>
@@ -78,7 +78,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-3 col-sm-12 home-introduce__item">
+            <div class="col-md-5 col-sm-12 home-introduce__item">
                 <div class="introduce-image">
                     <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
                 </div>
@@ -92,35 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-3 col-sm-12 home-introduce__item">
-                <div class="introduce-image">
-                    <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
-                </div>
-                <div class="introduce-review">
-                    <div class="introduce-review__title">
-                        <p>GIAO NHẬN HÀNG HÓA</p>
-                    </div>
-                    <div class="introduce-review__msg">
-                        <p>Dịch vụ giao nhận - Cung cấp dịch vụ giao nhận vận chuyển đường bộ, đường sắt, đường biển,
-                            đường không với chất lượng dịch vụ và giá cả tốt nhất</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3 col-sm-12 home-introduce__item">
-                <div class="introduce-image">
-                    <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
-                </div>
-                <div class="introduce-review">
-                    <div class="introduce-review__title">
-                        <p>GIAO NHẬN HÀNG HÓA</p>
-                    </div>
-                    <div class="introduce-review__msg">
-                        <p>Dịch vụ giao nhận - Cung cấp dịch vụ giao nhận vận chuyển đường bộ, đường sắt, đường biển,
-                            đường không với chất lượng dịch vụ và giá cả tốt nhất</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3 col-sm-12 home-introduce__item">
+            <div class="col-md-5 col-sm-12 home-introduce__item">
                 <div class="introduce-image">
                     <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
                 </div>
