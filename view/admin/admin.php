@@ -3,10 +3,10 @@
       <div id="page-wrapper">
 
         <?php 
-          if(isset($_GET['controller'])) {
-            $path = $_GET['controller'].".php";
-            if(file_exists("../controller/$path")) {
-              include "../controller/$path";
+          if(isset($_GET['view'])) {
+            $path = $_GET['view'].".php";
+            if(file_exists("../view/admin/$path")) {
+              include "../view/admin/$path";
             } 
             // else {
             //   $path="404.php";

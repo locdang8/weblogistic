@@ -1,5 +1,5 @@
-<?php include"header.php"?>
-<?php include "../model/thuvien.php" ?>
+<?php include "header.php";?>
+<?php include "../model/thuvien.php"; ?>
 
 
 <link rel="stylesheet" href="../view/css/base.css">

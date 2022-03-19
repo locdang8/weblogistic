@@ -1,3 +1,9 @@
+<div>
+    <button>
+        <a href="../controller/them_dv.php">Thêm dịch vụ</a>
+    </button>
+</div>
+
 <table class="styled-table">
     <thead>
         <tr>
@@ -24,12 +30,12 @@
                 <td><?php echo $value['tendv'];?></td>
                 <td><?php echo $value['noidung'];?></td>
                 <td class="option">
-                    <span class="update" value="<?php echo $value['madv'];?>">
+                    <a class="update" href="../controller/sua_dv.php?madv=<?php echo $value['madv'];?>" value="">
                         <img src="../view/images/icon/update.svg" title="<?php echo $value['madv'];?>" alt="Cập nhật">
-                    </span>
-                    <span>
+                    </a>
+                    <a href="../controller/xoa_dv.php?madv=<?php echo $value['madv'];?>">
                         <img src="../view/images/icon/delete.svg" title="Xóa" alt="Xóa">
-                    </span>
+                    </a>
                 </td>
             </tr>
 
@@ -37,22 +43,67 @@
     </tbody>
 </table>
 
-<div class="modal__layout">
+<!-- <div class="modal__layout"> -->
+
+<?php 
+// ajax
+// if(isset($_GET["id"])) {
+//     $madv = $_GET["id"];
+
+//     $select = "SELECT * FROM dichvu WHERE madv = '$madv'";
     
-    <div>
+//     $stmt = $pdo->prepare($select);
+    
+//     // $stmt->bindParam(1, $madv);
+    
+//     $stmt->execute();
+    
+//     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+//     foreach ($result as $value) {
+        
+//     }
+    
+//     echo "<div>";
+//     echo '<div><button class="btn__close">Close</button></div>';
+//     echo '<form action="" method="POST" class="modal__form">';
+//     echo '<label for="">Mã dịch vụ</label>';
+//     echo "<div>";
+//     echo '<input type="text" value="'.$value['madv'].'">';
+//     echo '</div>';
+//     echo '<label for="">Tên dịch vụ</label>';
+//     echo '<div>';
+//     echo '<input type="text" value="'.$value['tendv'].'">';
+//     echo '</div>';
+//     echo '<label for="">Nội dung</label>';
+//     echo '<div>';
+//     echo '<input type="text">';
+//     echo '</div>';
+//     echo '<div>';
+//     echo '<input type="submit" name="submit" value="Lưu">';
+//     echo '</div>';
+//     echo '</form>';
+//     echo  '</div>';
+//     echo "</div>";
+// } else {
+//     echo "Làm đéo gì có";
+// }
+
+?>    
+    <!-- <div>
         <div><button class="btn__close">Close</button></div>
-        <form action="#" method="POST" class="modal__form">
+        <form action="" method="POST" class="modal__form">
             <label for="">
                 Mã dịch vụ
             </label>
             <div>
-                <input type="text" disabled>
+                <input type="text" value="">
             </div>
             <label for="">
             Tên dịch vụ
             </label>
             <div>
-                <input type="text">
+                <input type="text" value="">
             </div>
             <label for="">
             Nội dung
@@ -65,4 +116,4 @@
             </div>
         </form>
     </div>
-</div>
+</div> -->

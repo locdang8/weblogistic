@@ -37,7 +37,7 @@
                         <a class="nav-link" href="../view/gioithieu.php">Giới thiệu</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="../view/dichvu.php" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="../controller/index.php" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Dịch vụ
                         </a>

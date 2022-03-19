@@ -1,12 +1,14 @@
-function Dichvu(ten) {
+function Dichvu(ten, src) {
   this.ten = ten;
+  this.src = src;
 }
 
+
 let dichvu_array = [
-  new Dichvu("Dịch vụ vận tải hàng không"),
-  new Dichvu("Dịch vụ vận tải"),
-  new Dichvu("Dịch vụ hải quan"),
-  new Dichvu("Dịch vụ COD"),
+  new Dichvu("Dịch vụ vận tải hàng không","../view/dv1.php?madv=VC02"),
+  new Dichvu("Dịch vụ vận tải","../view/dv1.php?madv=VC01"),
+  new Dichvu("Dịch vụ hải quan","../view/dv1.php?madv=TT01"),
+  new Dichvu("Dịch vụ COD","../view/dv1.php?madv=COD"),
 ];
 
 // <<<<<<< HEAD
@@ -17,12 +19,12 @@ const listSet = document.querySelector("#list-set");
 const dropDown = document.querySelector(".dropdown");
 window.addEventListener("DOMContentLoaded", function () {
   let ten_dv = dichvu_array.map(function (element) {
-      return `<li><a href="">${element.ten}</a></li>`;
+      return `<li><a href="${element.src}">${element.ten}</a></li>`;
     })
     .join("");
 
     let ten_dv2 = dichvu_array.map(function (element) {
-      return `<a class="dropdown-item" href="#">${element.ten}</a>`
+      return `<a class="dropdown-item" href="${element.src}">${element.ten}</a>`
     })
     .join("");
 

@@ -48,13 +48,14 @@
     text-align: center;
 }
 
-.option span {
+.option a {
     color: blue;
     margin: 10px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.option span img{
+.option a img{
     width: 20px;
 }
 
