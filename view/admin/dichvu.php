@@ -86,7 +86,7 @@
 //     echo  '</div>';
 //     echo "</div>";
 // } else {
-//     echo "Làm đéo gì có";
+//     echo "Không có";
 // }
 
 ?>    

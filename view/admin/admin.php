@@ -8,10 +8,10 @@
             if(file_exists("../view/admin/$path")) {
               include "../view/admin/$path";
             } 
-            // else {
-            //   $path="404.php";
-            //   include "../controller/$path";
-            // }
+            else {
+              $path="404.php";
+              include "../view/admin/$path";
+            }
           }
         ?>
         <!-- <div class="row">

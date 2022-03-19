@@ -67,6 +67,7 @@ function insertDichVu($pdo, $arr) {
         echo 'alert("Thêm thất bại")';
         echo '</script>';
     }
+	$pdo = null;
 }
 
 // udpate dịch vụ 
@@ -86,6 +87,7 @@ function updateDichVu($pdo, $arr) {
         echo 'alert("Cập nhật thất bại")';
         echo '</script>';
     }
+	$pdo = null;
 }
 
 function deleteData($pdo, $table,$key, $id) {
@@ -93,11 +95,52 @@ function deleteData($pdo, $table,$key, $id) {
 	$stmt = $pdo->prepare($sql);
 	$stmt->bindValue(":$key", $id);
 	$stmt->execute();
+	$pdo = null;
 	header("location: ../controller/admin.php?view=$table");
 }
 
-//hiển thị nội dung bảng ghi khi được ấn update
-// 
-// update bản ghi
-// function then
+// table danhmuc
+function insertDanhMuc($pdo, $arr) {
+	$sql = "INSERT INTO danhmuc (madanhmuc, tendanhmuc, ghichu)
+	VALUES (:madanhmuc, :tendanhmuc, :ghichu)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bindValue(':madanhmuc', $arr["madanhmuc"]);
+    $stmt->bindValue(':tendanhmuc', $arr["tendanhmuc"]);
+	if(empty($arr["ghichu"])) {
+		$stmt->bindValue(':ghichu', "Không có ghi chú");
+	} else {
+		$stmt->bindValue(':ghichu', $arr["ghichu"]);
+	}
+    if($stmt->execute()) {
+        echo '<script language="javascript">';
+        echo 'alert("Thêm thành công")';
+        echo '</script>';
+    } else {
+        echo '<script language="javascript">';
+        echo 'alert("Thêm thất bại")';
+        echo '</script>';
+    }
+	$pdo = null;
+}
+
+function updateDanhMuc($pdo, $arr) {
+	$sql = "UPDATE danhmuc set tendanhmuc = :tendanhmuc, ghichu = :ghichu WHERE madanhmuc = :madanhmuc"; 
+
+	$stmt = $pdo->prepare($sql);
+	$stmt->bindValue(':madanhmuc', $arr["madanhmuc"]);
+    $stmt->bindValue(':tendanhmuc', $arr["tendanhmuc"]);
+	if(empty($arr["ghichu"])) {
+		$stmt->bindValue(':ghichu', "Không có ghi chú");
+	} else {
+		$stmt->bindValue(':ghichu', $arr["ghichu"]);
+	}
+    if($stmt->execute()) {
+		header("location: ../controller/admin.php?view=danhmuc");
+    } else {
+        echo '<script language="javascript">';
+        echo 'alert("Cập nhật thất bại")';
+        echo '</script>';
+    }
+	$pdo = null;
+}
 ?>

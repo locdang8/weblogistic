@@ -55,10 +55,11 @@ if(!empty($_SESSION['username'])) {
           <ul class="nav navbar-nav side-nav">
             <li class="active"><a href="/weblogistic/controller/admin.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
             <li><a href="admin.php?view=dichvu"><i class="fa fa-file-o"></i> Dịch vụ</a></li>
-            <li><a href="admin.php?view=baiviet"><i class="fa fa-table"></i> Tin tức</a></li>
-            <li><a href="admin.php?view=tieumuc"><i class="fa fa-edit"></i>Tiểu mục</a></li>
-            <li><a href="admin.php?view=yeucaudongia"><i class="fa fa-check-square"></i>Đơn báo giá</a></li>
-            <li><a href="admin.php?view=khachhang"><i class="fa fa-desktop"></i>Khách hàng</a></li>
+            <li><a href="admin.php?view=baiviet"><i class="fa fa-table"></i> Bài viết</a></li>
+            <li><a href="admin.php?view=danhmuc"><i class="fa fa-edit"></i> Danh mục</a></li>
+            <li><a href="admin.php?view=hinhthuc"><i class="fa fa-edit"></i> Hình thức</a></li>
+            <li><a href="admin.php?view=yeucaudongia"><i class="fa fa-check-square"></i> Yêu cầu báo giá</a></li>
+            <li><a href="admin.php?view=khachhang"><i class="fa fa-desktop"></i> Khách hàng</a></li>
             <!-- <li><a href=""><i class="fa fa-wrench"></i> Bootstrap Grid</a></li> -->
             <!-- <li><a href=""><i class="fa fa-file"></i> Blank Page</a></li> -->
             <!-- <li class="dropdown">

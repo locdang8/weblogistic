@@ -1,3 +1,8 @@
+<div>
+    <button>
+        <a href="../controller/them_bv.php">Thêm bài viết</a>
+    </button>
+</div>
 <table class="styled-table">
     <thead>
         <tr>
@@ -5,9 +10,8 @@
             <th>Tiêu đề</th>
             <th>Nội dung</th>
             <th>Ngaỳ đăng</th>
-            <th>Tùy chỉnh</th>
-            <th>Ngay dang</th>
-            <th>Tuy chinh</th>
+            <th>Hình ảnh</th>
+            <th>Tên danh mục</th>
         </tr>
     </thead>
     <tbody>
@@ -27,13 +31,15 @@
                 <td><?php echo $value['tieude'];?></td>
                 <td><?php echo $value['noidung'];?></td>
                 <td><?php echo $value['ngaydang'];?></td>
+                <td><?php echo $value['hinhanh'];?></td>
+                <td><?php echo $value['tendanhmuc'];?></td>
                 <td class="option">
-                    <span>
-                        <a href=""><img src="../view/images/icon/update.svg" title="Cập nhật" alt="Cập nhật"></a>
-                    </span>
-                    <span>
-                        <a href=""><img src="../view/images/icon/delete.svg" title="Xóa" alt="Xóa"></a>
-                    </span>
+                    <a class="update" href="../controller/sua_dv.php?mabaiviet=<?php echo $value['mabaiviet'];?>" value="">
+                        <img src="../view/images/icon/update.svg" title="<?php echo $value['mabaiviet'];?>" alt="Cập nhật">
+                    </a>
+                    <a href="../controller/xoa_dv.php?mabaiviet=<?php echo $value['mabaiviet'];?>">
+                        <img src="../view/images/icon/delete.svg" title="Xóa" alt="Xóa">
+                    </a>
                 </td>
             </tr>
 

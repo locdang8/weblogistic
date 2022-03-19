@@ -100,7 +100,8 @@
 }
 
 .modal__layout div .modal__form > div > input[type="submit"] {
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin: 20px 0;
     border: none;
     cursor: pointer;
     background-color: #445c7c;
