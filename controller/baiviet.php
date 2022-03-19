@@ -1,3 +1,3 @@
 <?php
-include "../view/admin/tintuc.php";
+include "../view/admin/baiviet.php";
 ?>

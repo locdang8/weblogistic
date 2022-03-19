@@ -7,6 +7,19 @@
 	height: 200px;
 	object-fit: cover;
 }
+.news-data-item:hover .data-image>img{
+	height: 268px;
+}
+.data-title, .data-note{
+	display: block;
+}
+.news-data-item:hover .data-title{
+	display: none;
+}
+.news-data-item:hover .data-note{
+	display: none;
+}
+
 .news-data-item>img{
 	background: #ccc;
 	height: 100px;

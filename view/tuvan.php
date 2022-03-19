@@ -28,6 +28,9 @@
                         <div class="data-title">
                             <p>Dịch vụ tư vấn xuất nhập khẩu Trong trường hợp nào doanh nghiệp xuất nhập...</p>
                         </div>
+                        <button class="buttonclick2 btn btn-primary py-3 px-4">
+                                <a href="" style="color: #000; text-decoration: none; font-size: 14px;">Xem chi tiet</a>
+                        </button>
                     </div>
                     <div class="col-md-5 advise-data-item">
                         <div class="data-image-advise">

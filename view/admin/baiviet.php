@@ -6,6 +6,8 @@
             <th>Nội dung</th>
             <th>Ngaỳ đăng</th>
             <th>Tùy chỉnh</th>
+            <th>Ngay dang</th>
+            <th>Tuy chinh</th>
         </tr>
     </thead>
     <tbody>
