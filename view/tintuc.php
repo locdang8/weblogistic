@@ -30,7 +30,7 @@
                         <div class="col-xl-5 col-12 news-data-item">
                             <div class="data-image">
                                 <img class="container mx-0 px-0"
-                                src="https://bestcargo.vn/wp-content/uploads/2022/01/Van-chuyen-hang-hoa-Bac-Nam-bang-tau-hoa.jpeg"
+                                src="../view/uploads/<?php echo $value['hinhanh']?>"
                                 alt="">
                             </div>
                             <div class="data-note text-center">
