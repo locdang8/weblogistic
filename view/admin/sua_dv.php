@@ -50,23 +50,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
             "tendv" => $_POST['tendv'],
             "noidung" => $_POST['noidung']
         ];    
-
-        // $sql = "UPDATE dichvu SET tendv = :tendv, noidung = :noidung WHERE madv = :madv";
-
-        // $stmt = $pdo->prepare($sql);
-
-        // $stmt->bindValue(':madv', $myData["madv"]);
-        // $stmt->bindValue(':tendv', $myData["tendv"]);
-        // $stmt->bindValue(':noidung', $myData["noidung"]);
-
-        // if($stmt->execute()) {
-        //     header("location: ../controller/admin.php?view=dichvu");
-        // } else {
-        //     echo '<script language="javascript">';
-        //     echo 'alert("Cập nhật thất bại")';
-        //     echo '</script>';
-        // }
-
         updateDichVu($pdo, $myData);
     }
 

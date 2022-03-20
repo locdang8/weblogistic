@@ -44,6 +44,11 @@
     color: #009879;
 }
 
+.styled-table tbody td .img__service {
+    width: 200px;
+    height: 100px;
+}
+
 .option {
     text-align: center;
 }
@@ -110,5 +115,11 @@
     height: 30px;
 } 
 
+.show__image {
+    /* display: flex; */
+    /* align-items: center; */
+}
 
-
+.show__image img {
+    width: 300px;
+}

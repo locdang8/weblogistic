@@ -14,9 +14,10 @@ function showDichvu($pdo) {
 	return $element;
 
 }
+
 //hàm này trả để check xem tài khoản và mật khẩu đó có tồn tại không
 //trả về số hàng, = 0 => là không có tài khoản đó tồn tại
-// = 1 => là có tài khoản 
+			   // = 1 => là có tài khoản 
 function showItem($pdo,$nameTable, $username, $password) {
 	$select = "SELECT * FROM $nameTable WHERE taikhoan='$username' AND matkhau='$password'";
 	$stmt = $pdo->query($select);
@@ -100,6 +101,7 @@ function deleteData($pdo, $table,$key, $id) {
 }
 
 // table danhmuc
+// insert danhmuc
 function insertDanhMuc($pdo, $arr) {
 	$sql = "INSERT INTO danhmuc (madanhmuc, tendanhmuc, ghichu)
 	VALUES (:madanhmuc, :tendanhmuc, :ghichu)";
@@ -122,7 +124,7 @@ function insertDanhMuc($pdo, $arr) {
     }
 	$pdo = null;
 }
-
+// update danhmuc
 function updateDanhMuc($pdo, $arr) {
 	$sql = "UPDATE danhmuc set tendanhmuc = :tendanhmuc, ghichu = :ghichu WHERE madanhmuc = :madanhmuc"; 
 
@@ -142,5 +144,50 @@ function updateDanhMuc($pdo, $arr) {
         echo '</script>';
     }
 	$pdo = null;
+}
+
+// baiviet
+// insert vaibiet
+function insertBaiViet($pdo, $arr) {
+	$sql = "INSERT INTO baiviet (mabaiviet, tieude, noidung, ngaydang, hinhanh, madanhmuc)
+            VALUES (:mabaiviet, :tieude, :noidung, :ngaydang, :hinhanh, :madanhmuc)";
+
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindValue(":mabaiviet", $arr["mabv"]);
+    $stmt->bindValue(":tieude", $arr["tieude"]);
+    $stmt->bindValue(":noidung", $arr["noidung"]);
+    $stmt->bindValue(":ngaydang", $arr["ngaydang"]);
+    $stmt->bindValue(":hinhanh", $arr["hinhanh"]);
+    $stmt->bindValue(":madanhmuc", $arr["danhmuc"]);         
+    if($stmt->execute()) {
+        echo '<script language="javascript">';
+        echo 'alert("Thêm thành công")';
+        echo '</script>';
+    } else {
+        echo '<script language="javascript">';
+        echo 'alert("Thêm thất bại")';
+        echo '</script>';
+    }
+    $pdo = null;
+}
+
+// update baiviet
+function updateBaiViet($pdo, $arr) {
+	$sql = "UPDATE baiviet SET  tieude = :tieude, noidung = :noidung, ngaydang = :ngaydang, hinhanh = :hinhanh, madanhmuc = :madanhmuc WHERE mabaiviet = :mabaiviet";
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindValue(":mabaiviet", $arr["mabv"]);
+    $stmt->bindValue(":tieude", $arr["tieude"]);
+    $stmt->bindValue(":noidung", $arr["noidung"]);
+    $stmt->bindValue(":ngaydang", $arr["ngaydang"]);
+    $stmt->bindValue(":hinhanh", $arr["hinhanh"]);
+    $stmt->bindValue(":madanhmuc", $arr["danhmuc"]);         
+    if($stmt->execute()) {
+		header("location: ../controller/admin.php?view=baiviet");
+    } else {
+        echo '<script language="javascript">';
+        echo 'alert("Cập nhật thất bại")';
+        echo '</script>';
+    }
+    $pdo = null;
 }
 ?>

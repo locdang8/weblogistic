@@ -3,7 +3,7 @@
     <div>
         <div>
             <button class="btn__close">
-                <a href="../controller/admin.php?view=danhmuc">Trở về</a>
+                <a href="../controller/admin.php?view=baiviet">Trở về</a>
             </button>
         </div>
         <form action="" method="POST" enctype="multipart/form-data" class="modal__form">
@@ -11,43 +11,55 @@
                 Mã bài viết
             </label>
             <div>
-                <input type="text" name="mabv" id="mabv" required>
+                <input type="text" name="mabv" id="mabv" >
             </div>
             <label for="">
             Tiêu đề
             </label>
             <div>
-                <input type="text" name="tieude" id="tieude" required>
+                <input type="text" name="tieude" id="tieude" >
             </div>
             <label for="">
             Nội dung
             </label>
             <div>
-                <input type="text" name="noidung" id="noidung"> 
+                <input type="text" name="noidung" id="noidung" > 
             </div>
             <label for="">
             Ngày đăng
             </label>
             <div>
-                <input type="datetime-local" name="ngaydang" id="ngaydang"> 
+                <input type="datetime-local" name="ngaydang" id="ngaydang" > 
             </div>
             <label for="">
             Hình ảnh
             </label>
             <div>
-                <input type="file" name="hinhanh" id="hinhanh"> 
+                <!-- <input type="file" name="hinhanh" id="hinhanh">  -->
+                <input type="file" name="hinhanh" id="hinhanh" required>
             </div>
             <label for="">
             Tên danh mục
             </label>
             <div>
+                
                 <select name="danhmuc" id="">
+                
                     <optgroup>
-                        <option value="">
-                            
+                    <?php 
+                    $result = showDatabase($pdo, "danhmuc");
+                    foreach ($result as  $value) {
+                        # code...
+                    ?>
+                        <option value="<?php echo $value['madanhmuc']?>">
+                        <?php echo $value['tendanhmuc']?>
                         </option>
+                        <?php }?>
+
                     </optgroup>
+
                 </select>
+                
             </div>
             <div>
                 <input type="submit" name="submit" value="Lưu" id="submit">
@@ -60,22 +72,87 @@
 
 if($_SERVER['REQUEST_METHOD'] == "POST") {
 
-    if(isset($_POST['madm']) && isset($_POST['tendm']) && isset($_POST['ghichu'])) {
-        $myData = [
-            "madanhmuc" => $_POST['madm'],
-            "tendanhmuc" => $_POST['tendm'],
-            "ghichu" => $_POST['ghichu']
-        ];    
-        insertDanhMuc($pdo,$myData);
+    // if(isset($_POST['mabv']) && isset($_POST['tieude']) && isset($_POST['noidung']) && isset($_POST['ngaydang'])
+    // && isset($_POST['hinhanh']) && isset($_POST['danhmuc']) ) {
 
-    } elseif (isset($_POST['madm']) && isset($_POST['tendm'])) {
-        $myData = [
-            "madanhmuc" => $_POST['madm'],
-            "tendanhmuc" => $_POST['tendm']
-        ];  
+    //     //upload image
+    //     $target_dir = "../view/uploads/";
+    //     $target_file = $target_dir . basename($_FILES["hinhanh"]["name"]);
         
-        insertDanhMuc($pdo,$myData);
-    }
 
+    //     $myData = [
+    //         "mabv" => $_POST['mabv'],
+    //         "tieude" => $_POST['tieude'],
+    //         "noidung" => $_POST['noidung'],
+    //         "ngaydang" => $_POST['ngaydang'],
+    //         "hinhanh" => $_POST['hinhanh'],
+    //         "danhmuc" => $_POST['danhmuc']
+    //     ];    
+    //     // insertDanhMuc($pdo,$myData);
+    //     $sql = "INSERT INTO baiviet (mabaiviet, tieude, noidung, ngaydang, hinhanh, danhmuc)
+    //     VALUES (:mabaiviet, :tieude, :noidung, :ngaydang, :hinhanh, :danhmuc)";
+    //     $stmt = $pdo->prepare($sql);
+    //     $stmt->bindValue(":mabaiviet", $myData["mabv"]);
+    //     $stmt->bindValue(":tieude", $myData["tieude"]);
+    //     $stmt->bindValue(":noidung", $myData["noidung"]);
+    //     $stmt->bindValue(":ngaydang", $myData["ngaydang"]);
+    //     $stmt->bindValue(":hinhanh", $myData["hinhanh"]);
+    //     $stmt->bindValue(":danhmuc", $myData["danhmuc"]);
+    //     if($stmt->execute()) {
+    //         echo "ok";
+    //     }
+    //     else {
+    //         echo "ko";
+
+    //     }
+    // } else {
+    //     echo "loi";
+    // }
+    $targetDir = "../view/uploads/";
+    $fileName = basename($_FILES["hinhanh"]["name"]);
+    $targetFilePath = $targetDir . $fileName;
+    $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+
+    if(!empty($_FILES["hinhanh"]['name'])) {
+
+        $allowTypes = array('jpg','png','jpeg','gif','pdf');
+        
+        if(in_array($fileType, $allowTypes)) {
+            
+            if(move_uploaded_file($_FILES["hinhanh"]["tmp_name"], $targetFilePath))
+            
+            $myData = [
+                "mabv" => $_POST['mabv'],
+                "tieude" => $_POST['tieude'],
+                "noidung" => $_POST['noidung'],
+                "ngaydang" => $_POST['ngaydang'],
+                "hinhanh" => $fileName,
+                "danhmuc" => $_POST['danhmuc']
+            ];    
+            // insert sql
+            // $sql = "INSERT INTO baiviet (mabaiviet, tieude, noidung, ngaydang, hinhanh, madanhmuc)
+            // VALUES (:mabaiviet, :tieude, :noidung, :ngaydang, :hinhanh, :madanhmuc)";
+
+            // $stmt = $pdo->prepare($sql);
+            // $stmt->bindValue(":mabaiviet", $myData["mabv"]);
+            // $stmt->bindValue(":tieude", $myData["tieude"]);
+            // $stmt->bindValue(":noidung", $myData["noidung"]);
+            // $stmt->bindValue(":ngaydang", $myData["ngaydang"]);
+            // $stmt->bindValue(":hinhanh", $myData["hinhanh"]);
+            // $stmt->bindValue(":madanhmuc", $myData["danhmuc"]);         
+            // if($stmt->execute()) {
+            //     echo '<script language="javascript">';
+            //     echo 'alert("Thêm thành công")';
+            //     echo '</script>';
+            // } else {
+            //     echo '<script language="javascript">';
+            //     echo 'alert("Thêm thất bại")';
+            //     echo '</script>';
+            // }
+            // $pdo = null;
+
+            insertBaiViet($pdo, $myData);
+        }
+    }
 }
 ?>
