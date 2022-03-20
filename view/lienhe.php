@@ -32,7 +32,7 @@
     </div>
 
     <div class="contact-item mt-5">
-        <form>
+        <!-- <form> -->
 			<div class="contact-item mt-5">
 				<form action="post">
 				  <div class="form-row">
@@ -56,13 +56,27 @@
 							foreach ($element as $value) {
 								// code...
 						?>
-						<option value="$value['tendv']"><?php echo $value["tendv"]?></option>
+						<option value="<?php echo $value['madv'] ?>"><?php echo $value["tendv"]?></option>
 						<?php }?>
 				      </select>
 				    </div>
 				    <div class="form-group col-md-6">
 				      <label for="inputZip">So dien thoai:</label>
 				      <input type="text" class="form-control" id="inputZip">
+				    </div>
+					<div class="form-group col-md-6">
+				      <label for="inputService">Chọn hình thức</label>
+				      <select id="inputService" class="form-control">
+				        <option selected>Choose...</option>
+				        <!-- xuất các dịch vụ từ database -->
+						<?php 
+							$element = showDatabase($pdo, "hinhthuc");
+							foreach ($element as $value) {
+								// code...
+						?>
+						<option value="<?php $value['mahinhthuc']?>"><?php echo $value["tenhinhthuc"]?></option>
+						<?php }?>
+				      </select>
 				    </div>
 				  </div>
 				  <input type="submit" class="btn btn-primary btn-sm|btn-lg" value="Gửi liên hệ">
@@ -71,5 +85,9 @@
 		</div>
     </div>
 </div>
-<?php  $pdo = null;?>
+
+<script>
+	// check mục điện thoại có khác số không??
+	
+</script>
 <?php include "../view/footer.php" ?>

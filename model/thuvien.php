@@ -190,4 +190,46 @@ function updateBaiViet($pdo, $arr) {
     }
     $pdo = null;
 }
+
+
+// hinhthuc
+// insert dichvu
+function insertHinhThuc($pdo, $arr) {
+	$sql = "INSERT INTO hinhthuc (mahinhthuc, tenhinhthuc)
+        VALUES (:mahinhthuc, :tenhinhthuc)";
+
+    $stmt = $pdo->prepare($sql);
+
+	$stmt->bindValue(':mahinhthuc', $arr["mahinhthuc"]);
+    $stmt->bindValue(':tenhinhthuc', $arr["tenhinhthuc"]);
+    if($stmt->execute()) {
+        echo '<script language="javascript">';
+        echo 'alert("Thêm thành công")';
+        echo '</script>';
+    } else {
+        echo '<script language="javascript">';
+        echo 'alert("Thêm thất bại")';
+        echo '</script>';
+    }
+	$pdo = null;
+}
+
+// udpate dịch vụ 
+function updateHinhThuc($pdo, $arr) {
+	$sql = "UPDATE hinhthuc SET tenhinhthuc = :tenhinhthuc WHERE mahinhthuc = :mahinhthuc";
+
+    $stmt = $pdo->prepare($sql);
+
+	$stmt->bindValue(':mahinhthuc', $arr["mahinhthuc"]);
+    $stmt->bindValue(':tenhinhthuc', $arr["tenhinhthuc"]);
+	
+    if($stmt->execute()) {
+		header("location: ../controller/admin.php?view=hinhthuc");
+    } else {
+        echo '<script language="javascript">';
+        echo 'alert("Cập nhật thất bại")';
+        echo '</script>';
+    }
+	$pdo = null;
+}
 ?>
