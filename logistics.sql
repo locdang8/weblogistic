@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 17, 2022 at 09:15 AM
+-- Generation Time: Mar 21, 2022 at 09:40 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -32,8 +32,18 @@ CREATE TABLE `baiviet` (
   `tieude` varchar(255) NOT NULL,
   `noidung` varchar(255) NOT NULL,
   `ngaydang` datetime NOT NULL,
+  `hinhanh` varchar(255) NOT NULL,
   `madanhmuc` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `baiviet`
+--
+
+INSERT INTO `baiviet` (`mabaiviet`, `tieude`, `noidung`, `ngaydang`, `hinhanh`, `madanhmuc`) VALUES
+(1, 'okokok', 'okokoko', '2022-03-20 22:03:00', 'logistics3.jpg', 1),
+(2, 'kokoko', 'kokoko', '2022-03-20 22:03:00', 'logistics5.jpeg', 2),
+(4, 'kimochioo', 'kimochioo', '2022-03-01 22:45:00', 'logistics5.jpeg', 2);
 
 -- --------------------------------------------------------
 
@@ -44,8 +54,16 @@ CREATE TABLE `baiviet` (
 CREATE TABLE `danhmuc` (
   `madanhmuc` int(11) NOT NULL,
   `tendanhmuc` varchar(255) NOT NULL,
-  `ghichu` varchar(255) DEFAULT NULL
+  `ghichu` varchar(255) DEFAULT 'Không có ghi chú'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `danhmuc`
+--
+
+INSERT INTO `danhmuc` (`madanhmuc`, `tendanhmuc`, `ghichu`) VALUES
+(1, 'Dịch vụ COD', 'Chuyển phát nhanh'),
+(2, 'Vận chuyển hàng không ', 'Không có ghi chú');
 
 -- --------------------------------------------------------
 
@@ -64,27 +82,12 @@ CREATE TABLE `dichvu` (
 --
 
 INSERT INTO `dichvu` (`madv`, `tendv`, `noidung`) VALUES
-('COD', 'Ship COD', 'Thanh toán khi nhận được hàng theo yêu cầu'),
+('COD', 'Dịch vụ chuyển phát ', 'Tốc độ nhanh'),
 ('LK01', 'Lưu kho', 'Cất trữ hàng hóa, lưu kho cho khách hàng có nhu cầu sử dụng'),
 ('TT01', 'Thủ tục hải quan', 'Làm các thủ tục giấy tờ liên quan đến hải quan cho khách hàng'),
 ('VC01', 'Vận chuyển đường bộ', 'Vận chuyển bằng đường bộ dùng các xe vận tải, thuê container,..'),
 ('VC02', 'Vận chuyển đường hàng không', 'Vận chuyển hàng hóa bằng các máy bay khi thuê bên dịch vụ vận chuyển'),
 ('VC03', 'Vận chuyển đường thủy', 'Vận chuyển hàng hóa bằng tàu, thuyền tại các bến bãi ở nhiều nơi');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `donbaogia`
---
-
-CREATE TABLE `donbaogia` (
-  `madon` int(11) NOT NULL,
-  `noidung` varchar(255) NOT NULL,
-  `ngaylap` datetime NOT NULL,
-  `mahinhthuc` int(11) NOT NULL,
-  `makh` int(11) NOT NULL,
-  `madv` varchar(32) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -96,6 +99,14 @@ CREATE TABLE `hinhthuc` (
   `mahinhthuc` int(11) NOT NULL,
   `tenhinhthuc` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `hinhthuc`
+--
+
+INSERT INTO `hinhthuc` (`mahinhthuc`, `tenhinhthuc`) VALUES
+(1, 'Hàng rời'),
+(2, 'CFS');
 
 -- --------------------------------------------------------
 
@@ -116,7 +127,13 @@ CREATE TABLE `khachhang` (
 
 INSERT INTO `khachhang` (`makh`, `tenkhachhang`, `diachi`, `email`) VALUES
 (1, 'Trần Văn Tiến', '132 Ngô Quyền,Hải Phòng', 'tiennq@gmail.com'),
-(2, 'Nguyễn Chiến Thắng', '10 Đà Nẵng,Hải Phòng', 'thang11@gmail.com');
+(2, 'Nguyễn Chiến Thắng', '10 Đà Nẵng,Hải Phòng', 'thang11@gmail.com'),
+(3, 'Nguyễn Bảo Nguyên', 'Hải Phòng', 'nguyen@gmail.com'),
+(4, 'Nguyễn Bảo Nguyên', 'Hải Phòng', 'nguyen@gmail.com'),
+(5, 'Nguyễn Bảo Nguyên', 'Hải Phòng', 'nguyen@gmail.com'),
+(6, 'okok', 'okok', 'ok@gmail.com'),
+(7, 'okok', 'okok', 'ok@gmail.com'),
+(8, 'ijij', 'ok', 'k2j2@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -163,15 +180,6 @@ ALTER TABLE `dichvu`
   ADD PRIMARY KEY (`madv`);
 
 --
--- Indexes for table `donbaogia`
---
-ALTER TABLE `donbaogia`
-  ADD PRIMARY KEY (`madon`),
-  ADD KEY `ma_kh` (`makh`),
-  ADD KEY `ma_ht` (`mahinhthuc`),
-  ADD KEY `ma_dv` (`madv`);
-
---
 -- Indexes for table `hinhthuc`
 --
 ALTER TABLE `hinhthuc`
@@ -197,31 +205,25 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `baiviet`
 --
 ALTER TABLE `baiviet`
-  MODIFY `mabaiviet` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `mabaiviet` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `danhmuc`
 --
 ALTER TABLE `danhmuc`
-  MODIFY `madanhmuc` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `donbaogia`
---
-ALTER TABLE `donbaogia`
-  MODIFY `madon` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `madanhmuc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `hinhthuc`
 --
 ALTER TABLE `hinhthuc`
-  MODIFY `mahinhthuc` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `mahinhthuc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `khachhang`
 --
 ALTER TABLE `khachhang`
-  MODIFY `makh` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `makh` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `user`
@@ -238,14 +240,6 @@ ALTER TABLE `user`
 --
 ALTER TABLE `baiviet`
   ADD CONSTRAINT `ma_danhmuc` FOREIGN KEY (`madanhmuc`) REFERENCES `danhmuc` (`madanhmuc`);
-
---
--- Constraints for table `donbaogia`
---
-ALTER TABLE `donbaogia`
-  ADD CONSTRAINT `ma_dv` FOREIGN KEY (`madv`) REFERENCES `dichvu` (`madv`),
-  ADD CONSTRAINT `ma_ht` FOREIGN KEY (`mahinhthuc`) REFERENCES `hinhthuc` (`mahinhthuc`),
-  ADD CONSTRAINT `ma_kh` FOREIGN KEY (`makh`) REFERENCES `khachhang` (`makh`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
