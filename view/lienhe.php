@@ -34,60 +34,102 @@
     <div class="contact-item mt-5">
         <!-- <form> -->
 			<div class="contact-item mt-5">
-				<form action="post">
+				<form method="POST" action="">
 				  <div class="form-row">
+				  	<div class="form-group col-md-12">
+				      <label for="inputEmail4">Họ tên</label>
+				      <input type="text" class="form-control" name="hoten" id="inputHoten" required placeholder="Họ tên">
+				    </div>
 				    <div class="form-group col-md-12">
 				      <label for="inputEmail4">Email</label>
-				      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+				      <input type="email" class="form-control" name="email" id="inputEmail4" required placeholder="Email">
 				    </div>
 				  </div>
 				  <div class="form-group">
+				    <label for="inputAddress">Nội dung</label>
+				    <input type="text" class="form-control" name="noidung" id="inputNoidung" required placeholder="Nội dung">
+				  </div>
+				  <div class="form-group">
 				    <label for="inputAddress">Địa chỉ</label>
-				    <input type="text" class="form-control" id="inputAddress2">
+				    <input type="text" class="form-control" name="diachi" id="inputAddress2" required placeholder="Địa chỉ">
 				  </div>
 				  <div class="form-row">
 				    <div class="form-group col-md-6">
 				      <label for="inputService">Chọn dịch vụ</label>
-				      <select id="inputService" class="form-control">
-				        <option selected>Choose...</option>
+				      <select id="inputService" class="form-control" required name="dichvu">
+				        <option value="">Choose...</option>
 				        <!-- xuất các dịch vụ từ database -->
 						<?php 
 							$element = showDichvu($pdo);
 							foreach ($element as $value) {
 								// code...
 						?>
-						<option value="<?php echo $value['madv'] ?>"><?php echo $value["tendv"]?></option>
+						<option value="<?php echo $value['madv'];?>"><?php echo $value["tendv"];?></option>
 						<?php }?>
 				      </select>
 				    </div>
 				    <div class="form-group col-md-6">
-				      <label for="inputZip">So dien thoai:</label>
-				      <input type="text" class="form-control" id="inputZip">
+				      <label for="inputZip">Số điện thoại:</label>
+				      <input type="text" class="form-control" name="sdt" required id="inputZip">
 				    </div>
 					<div class="form-group col-md-6">
 				      <label for="inputService">Chọn hình thức</label>
-				      <select id="inputService" class="form-control">
-				        <option selected>Choose...</option>
+				      <select id="inputService" class="form-control" required name="hinhthuc">
+				        <option value="">Choose...</option>
 				        <!-- xuất các dịch vụ từ database -->
 						<?php 
 							$element = showDatabase($pdo, "hinhthuc");
 							foreach ($element as $value) {
 								// code...
 						?>
-						<option value="<?php $value['mahinhthuc']?>"><?php echo $value["tenhinhthuc"]?></option>
+						<option value="<?php echo $value['mahinhthuc'];?>"><?php echo $value["tenhinhthuc"];?></option>
 						<?php }?>
 				      </select>
 				    </div>
 				  </div>
-				  <input type="submit" class="btn btn-primary btn-sm|btn-lg" value="Gửi liên hệ">
+				  <input type="submit" name="submit" class="btn btn-primary btn-sm|btn-lg" value="Gửi liên hệ">
 				</form>
 			</div>
 		</div>
     </div>
 </div>
 
+<?php 
+	if($_SERVER['REQUEST_METHOD'] == "POST") {
+
+		if(isset($_POST['hoten']) && isset($_POST['email']) && isset($_POST['noidung']) && isset($_POST['diachi']) && isset($_POST['dichvu'])  
+		&& isset($_POST['sdt']) && isset($_POST['hinhthuc']) ) {
+
+			$timeline = date("Y-m-d h:i:s");
+			$khachhang = [
+				"tenkhachhang" => $_POST['hoten'],
+				"diachi" => $_POST['diachi'],
+				"email" => $_POST['email']
+			];
+
+			insertKhachHangWithoutId($pdo, $khachhang);
+
+			// lấy id khách hàng để đẩy data tới bảng ttdonbaogia
+			$table = "khachhang";
+			$showIDKH = showDatabseWithName($pdo, $table, "tenkhachhang", $khachhang["tenkhachhang"]);
+			foreach ($showIDKH as  $value) {
+			}
+
+			$ttdonbaogia = [
+				"noidung" => $_POST["noidung"],
+				"ngaylap" => $timeline,
+				"mahinhthuc" => $_POST['hinhthuc'],
+				"makh" => $value['makh'],
+				"madv" => $_POST['dichvu'],
+			];
+
+			inserTTdonbaogia($pdo, $ttdonbaogia);
+		} 
+
+	}
+?>
+
 <script>
 	// check mục điện thoại có khác số không??
-	
 </script>
 <?php include "../view/footer.php" ?>

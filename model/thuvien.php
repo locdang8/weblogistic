@@ -232,4 +232,82 @@ function updateHinhThuc($pdo, $arr) {
     }
 	$pdo = null;
 }
+
+//insertKhachHang
+function insertKhachHangWithoutId($pdo, $arr) {
+	$sql = "INSERT INTO khachhang (tenkhachhang, diachi, email)
+        VALUES (:tenkhachhang, :diachi, :email)";
+
+    $stmt = $pdo->prepare($sql);
+
+    $stmt->bindValue(':tenkhachhang', $arr["tenkhachhang"]);
+    $stmt->bindValue(':diachi', $arr["diachi"]);
+    $stmt->bindValue(':email', $arr["email"]);
+    if($stmt->execute()) {
+        echo '<script language="javascript">';
+        echo 'alert("Thêm thành công")';
+        echo '</script>';
+    } else {
+        echo '<script language="javascript">';
+        echo 'alert("Thêm thất bại")';
+        echo '</script>';
+    }
+	$pdo = null;
+}
+
+function insertKhachHang($pdo, $arr) {
+	$sql = "INSERT INTO khachhang (makhachhang,tenkhachhang)
+        VALUES (:makhachhang,:tenkhachhang)";
+
+    $stmt = $pdo->prepare($sql);
+
+    $stmt->bindValue(':makhachhang', $arr["makhachhang"]);
+    $stmt->bindValue(':tenkhachhang', $arr["tenkhachhang"]);
+    if($stmt->execute()) {
+        echo '<script language="javascript">';
+        echo 'alert("Thêm thành công")';
+        echo '</script>';
+    } else {
+        echo '<script language="javascript">';
+        echo 'alert("Thêm thất bại")';
+        echo '</script>';
+    }
+	$pdo = null;
+}
+
+// tìm kiếm id bằng tên 
+// hoặc
+// tìm kiếm khách hàng bằng tên 
+function showDatabseWithName($pdo, $table, $searchName, $searchValue) {
+	$sql = "SELECT * FROM $table WHERE $searchName = '$searchValue'";
+	$stmt = $pdo->prepare($sql);
+	$stmt->execute();
+	$element = $stmt->fetchAll(PDO::FETCH_ASSOC);
+	$pdo = null;
+	return $element;
+}
+
+// insert TTdonbaogia
+function inserTTdonbaogia($pdo, $arr) {
+	$sql = "INSERT INTO ttdonbaogia (noidung, ngaylap, mahinhthuc, makh, madv)
+        VALUES (:noidung, :ngaylap, :mahinhthuc, :makh, :madv)";
+
+    $stmt = $pdo->prepare($sql);
+
+    $stmt->bindValue(':noidung', $arr["noidung"]);
+    $stmt->bindValue(':ngaylap', $arr["ngaylap"]);
+    $stmt->bindValue(':mahinhthuc', $arr["mahinhthuc"]);
+    $stmt->bindValue(':makh', $arr["makh"]);
+    $stmt->bindValue(':madv', $arr["madv"]);
+    if($stmt->execute()) {
+        echo '<script language="javascript">';
+        echo 'alert("Xác nhận yêu cầu báo giá thành công")';
+        echo '</script>';
+    } else {
+        echo '<script language="javascript">';
+        echo 'alert("Thêm thất bại")';
+        echo '</script>';
+    }
+	$pdo = null;
+} 
 ?>
