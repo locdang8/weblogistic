@@ -7,8 +7,9 @@
 <table class="styled-table">
     <thead>
         <tr>
-            <th>Mã hình thức</th>
-            <th>Tên hình thức</th>
+            <th>Tên khách hàng</th>
+            <th>Địa chỉ</th>
+            <th>Email</th>
             <th>Tùy chỉnh</th>
         </tr>
     </thead>
@@ -26,12 +27,13 @@
 
             <tr>
                 <td><?php echo $value['tenkhachhang'];?></td>
-                <td><?php echo $value['tenhinhthuc'];?></td>
+                <td><?php echo $value['diachi'];?></td>
+                <td><?php echo $value['email'];?></td>
                 <td class="option">
-                    <a class="update" href="../controller/sua_ht.php?mahinhthuc=<?php echo $value['mahinhthuc'];?>" value="">
-                        <img src="../view/images/icon/update.svg" title="<?php echo $value['mahinhthuc'];?>" alt="Cập nhật">
+                    <a class="update" href="../controller/sua_kh.php?makh=<?php echo $value['makh'];?>" value="">
+                        <img src="../view/images/icon/update.svg" title="<?php echo $value['makh'];?>" alt="Cập nhật">
                     </a>
-                    <a href="../controller/xoa_ht.php?mahinhthuc=<?php echo $value['mahinhthuc'];?>">
+                    <a href="../controller/xoa_kh.php?makh=<?php echo $value['makh'];?>">
                         <img src="../view/images/icon/delete.svg" title="Xóa" alt="Xóa">
                     </a>
                 </td>
