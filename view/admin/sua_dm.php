@@ -8,24 +8,24 @@
         </div>
         <form action="" method="POST" class="modal__form">
             <?php 
-                $table = "danhmuc";
-                $key = "madanhmuc";
-                $id_madanhmuc = $_GET['madanhmuc'];
-                $result = showDatabaseWithId($pdo, $table, $key, $id_madanhmuc);
+                $table = "theloai";
+                $key = "matheloai";
+                $id_matheloai = $_GET['matheloai'];
+                $result = showDatabaseWithId($pdo, $table, $key, $id_matheloai);
                 foreach ($result as  $value) {
                     # code...
                 ?>
             <label for="">
-                Mã danh mục
+                Mã thể loại
             </label>
             <div>
-                <input type="text" name="madm" id="madm" disabled value="<?php echo $value['madanhmuc'];?>">
+                <input type="text" name="matl" id="matl" disabled value="<?php echo $value['matheloai'];?>">
             </div>
             <label for="">
-            Tên danh mục
+            Tên thể loại
             </label>
             <div>
-                <input type="text" name="tendm" id="tendm" required value="<?php echo $value['tendanhmuc'];?>">
+                <input type="text" name="tentl" id="tentl" required value="<?php echo $value['tentheloai'];?>">
             </div>
             <label for="">
             Ghi chú (<small style="color:red">Tùy chọn!!</small>)
@@ -47,17 +47,17 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 
     if($_SERVER['REQUEST_METHOD'] == "POST") {
 
-        if(isset($_POST['tendm']) && isset($_POST['ghichu'])) {
+        if(isset($_POST['tentl']) && isset($_POST['ghichu'])) {
             $myData = [
-                "madanhmuc" => $id_madanhmuc,
-                "tendanhmuc" => $_POST['tendm'],
+                "matheloai" => $id_matheloai,
+                "tentheloai" => $_POST['tentl'],
                 "ghichu" => $_POST['ghichu']
             ];
-            updateDanhMuc($pdo,$myData);
-            
-    
-        } 
-    
+            updateTheLoai($pdo,$myData);
+        }
+        else {
+            echo "Lỗi con mẹ mày rồi ";
+        }
     }
 }
 ?>

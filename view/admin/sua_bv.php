@@ -58,28 +58,28 @@
             <div>
                 <input type="text" disabled
                 value="<?php 
-                    $table = 'danhmuc';
-                    $key = 'madanhmuc';
-                    $id = $value['madanhmuc'];
+                    $table = 'theloai';
+                    $key = 'matheloai';
+                    $id = $value['matheloai'];
                     $myValue = showDatabaseWithId($pdo, $table, $key, $id);
                     foreach ($myValue as $item) {
                         # code...
                     }
-                    echo $item['tendanhmuc'];?>"
+                    echo $item['tentheloai'];?>"
                 >
             </div>
             <div>
                 
-                <select name="danhmuc" id="">
+                <select name="theloai" id="">
                 
                     <optgroup>
                     <?php 
-                    $result = showDatabase($pdo, "danhmuc");
+                    $result = showDatabase($pdo, "theloai");
                     foreach ($result as  $value) {
                         # code...
                     ?>
-                        <option value="<?php echo $value['madanhmuc']?>">
-                        <?php echo $value['tendanhmuc']?>
+                        <option value="<?php echo $value['matheloai']?>">
+                        <?php echo $value['tentheloai']?>
                         </option>
                         <?php }?>
 
@@ -118,7 +118,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
                 "noidung" => $_POST['noidung'],
                 "ngaydang" => $_POST['ngaydang'],
                 "hinhanh" => $fileName,
-                "danhmuc" => $_POST['danhmuc']
+                "theloai" => $_POST['theloai']
             ];    
             updateBaiViet($pdo, $myData);
         }

@@ -43,16 +43,16 @@
             </label>
             <div>
                 
-                <select name="danhmuc" id="">
+                <select name="theloai" id="">
                 
                     <optgroup>
                     <?php 
-                    $result = showDatabase($pdo, "danhmuc");
+                    $result = showDatabase($pdo, "theloai");
                     foreach ($result as  $value) {
                         # code...
                     ?>
-                        <option value="<?php echo $value['madanhmuc']?>">
-                        <?php echo $value['tendanhmuc']?>
+                        <option value="<?php echo $value['matheloai']?>">
+                        <?php echo $value['tentheloai']?>
                         </option>
                         <?php }?>
 
@@ -73,7 +73,7 @@
 if($_SERVER['REQUEST_METHOD'] == "POST") {
 
     // if(isset($_POST['mabv']) && isset($_POST['tieude']) && isset($_POST['noidung']) && isset($_POST['ngaydang'])
-    // && isset($_POST['hinhanh']) && isset($_POST['danhmuc']) ) {
+    // && isset($_POST['hinhanh']) && isset($_POST['theloai']) ) {
 
     //     //upload image
     //     $target_dir = "../view/uploads/";
@@ -86,18 +86,18 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     //         "noidung" => $_POST['noidung'],
     //         "ngaydang" => $_POST['ngaydang'],
     //         "hinhanh" => $_POST['hinhanh'],
-    //         "danhmuc" => $_POST['danhmuc']
+    //         "theloai" => $_POST['theloai']
     //     ];    
-    //     // insertDanhMuc($pdo,$myData);
-    //     $sql = "INSERT INTO baiviet (mabaiviet, tieude, noidung, ngaydang, hinhanh, danhmuc)
-    //     VALUES (:mabaiviet, :tieude, :noidung, :ngaydang, :hinhanh, :danhmuc)";
+    //     // inserttheloai($pdo,$myData);
+    //     $sql = "INSERT INTO baiviet (mabaiviet, tieude, noidung, ngaydang, hinhanh, theloai)
+    //     VALUES (:mabaiviet, :tieude, :noidung, :ngaydang, :hinhanh, :theloai)";
     //     $stmt = $pdo->prepare($sql);
     //     $stmt->bindValue(":mabaiviet", $myData["mabv"]);
     //     $stmt->bindValue(":tieude", $myData["tieude"]);
     //     $stmt->bindValue(":noidung", $myData["noidung"]);
     //     $stmt->bindValue(":ngaydang", $myData["ngaydang"]);
     //     $stmt->bindValue(":hinhanh", $myData["hinhanh"]);
-    //     $stmt->bindValue(":danhmuc", $myData["danhmuc"]);
+    //     $stmt->bindValue(":theloai", $myData["theloai"]);
     //     if($stmt->execute()) {
     //         echo "ok";
     //     }
@@ -127,11 +127,11 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
                 "noidung" => $_POST['noidung'],
                 "ngaydang" => $_POST['ngaydang'],
                 "hinhanh" => $fileName,
-                "danhmuc" => $_POST['danhmuc']
+                "theloai" => $_POST['theloai']
             ];    
             // insert sql
-            // $sql = "INSERT INTO baiviet (mabaiviet, tieude, noidung, ngaydang, hinhanh, madanhmuc)
-            // VALUES (:mabaiviet, :tieude, :noidung, :ngaydang, :hinhanh, :madanhmuc)";
+            // $sql = "INSERT INTO baiviet (mabaiviet, tieude, noidung, ngaydang, hinhanh, matheloai)
+            // VALUES (:mabaiviet, :tieude, :noidung, :ngaydang, :hinhanh, :matheloai)";
 
             // $stmt = $pdo->prepare($sql);
             // $stmt->bindValue(":mabaiviet", $myData["mabv"]);
@@ -139,7 +139,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
             // $stmt->bindValue(":noidung", $myData["noidung"]);
             // $stmt->bindValue(":ngaydang", $myData["ngaydang"]);
             // $stmt->bindValue(":hinhanh", $myData["hinhanh"]);
-            // $stmt->bindValue(":madanhmuc", $myData["danhmuc"]);         
+            // $stmt->bindValue(":matheloai", $myData["theloai"]);         
             // if($stmt->execute()) {
             //     echo '<script language="javascript">';
             //     echo 'alert("Thêm thành công")';

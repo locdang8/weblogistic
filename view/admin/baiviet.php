@@ -11,7 +11,7 @@
             <th>Nội dung</th>
             <th>Ngaỳ đăng</th>
             <th>Hình ảnh</th>
-            <th>Tên danh mục</th>
+            <th>Tên thể loại</th>
             <th>Tùy chỉnh</th>
         </tr>
     </thead>
@@ -37,7 +37,7 @@
                 </td>
                 <td>
                     <?php 
-                        echo $value['madanhmuc'];?>
+                        echo $value['matheloai'];?>
                 </td>
                 <td class="option">
                     <a class="update" href="../controller/sua_bv.php?mabaiviet=<?php echo $value['mabaiviet'];?>" value="">

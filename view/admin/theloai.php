@@ -16,7 +16,7 @@
     <tbody>
 
         <?php 
-            $table = "danhmuc";
+            $table = "theloai";
 
             $row = showDatabase($pdo, $table);
 
@@ -26,14 +26,14 @@
         ?>
 
             <tr>
-                <td><?php echo $value['madanhmuc'];?></td>
-                <td><?php echo $value['tendanhmuc'];?></td>
+                <td><?php echo $value['matheloai'];?></td>
+                <td><?php echo $value['tentheloai'];?></td>
                 <td><?php echo $value['ghichu'];?></td>
                 <td class="option">
-                    <a class="update" href="../controller/sua_dm.php?madanhmuc=<?php echo $value['madanhmuc'];?>" value="">
-                        <img src="../view/images/icon/update.svg" title="<?php echo $value['madanhmuc'];?>" alt="Cập nhật">
+                    <a class="update" href="../controller/sua_dm.php?matheloai=<?php echo $value['matheloai'];?>" value="">
+                        <img src="../view/images/icon/update.svg" title="<?php echo $value['matheloai'];?>" alt="Cập nhật">
                     </a>
-                    <a href="../controller/xoa_dm.php?madanhmuc=<?php echo $value['madanhmuc'];?>">
+                    <a href="../controller/xoa_dm.php?matheloai=<?php echo $value['matheloai'];?>">
                         <img src="../view/images/icon/delete.svg" title="Xóa" alt="Xóa">
                     </a>
                 </td>

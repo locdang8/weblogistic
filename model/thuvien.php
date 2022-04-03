@@ -100,14 +100,14 @@ function deleteData($pdo, $table,$key, $id) {
 	header("location: ../controller/admin.php?view=$table");
 }
 
-// table danhmuc
-// insert danhmuc
-function insertDanhMuc($pdo, $arr) {
-	$sql = "INSERT INTO danhmuc (madanhmuc, tendanhmuc, ghichu)
-	VALUES (:madanhmuc, :tendanhmuc, :ghichu)";
+// table theloai
+// insert theloai
+function insertTheLoai($pdo, $arr) {
+	$sql = "INSERT INTO theloai (matheloai, tentheloai, ghichu)
+	VALUES (:matheloai, :tentheloai, :ghichu)";
 	$stmt = $pdo->prepare($sql);
-	$stmt->bindValue(':madanhmuc', $arr["madanhmuc"]);
-    $stmt->bindValue(':tendanhmuc', $arr["tendanhmuc"]);
+	$stmt->bindValue(':matheloai', $arr["matheloai"]);
+    $stmt->bindValue(':tentheloai', $arr["tentheloai"]);
 	if(empty($arr["ghichu"])) {
 		$stmt->bindValue(':ghichu', "Không có ghi chú");
 	} else {
@@ -124,20 +124,20 @@ function insertDanhMuc($pdo, $arr) {
     }
 	$pdo = null;
 }
-// update danhmuc
-function updateDanhMuc($pdo, $arr) {
-	$sql = "UPDATE danhmuc set tendanhmuc = :tendanhmuc, ghichu = :ghichu WHERE madanhmuc = :madanhmuc"; 
+// update theloai
+function updateTheLoai($pdo, $arr) {
+	$sql = "UPDATE theloai set tentheloai = :tentheloai, ghichu = :ghichu WHERE matheloai = :matheloai"; 
 
 	$stmt = $pdo->prepare($sql);
-	$stmt->bindValue(':madanhmuc', $arr["madanhmuc"]);
-    $stmt->bindValue(':tendanhmuc', $arr["tendanhmuc"]);
+	$stmt->bindValue(':matheloai', $arr["matheloai"]);
+    $stmt->bindValue(':tentheloai', $arr["tentheloai"]);
 	if(empty($arr["ghichu"])) {
 		$stmt->bindValue(':ghichu', "Không có ghi chú");
 	} else {
 		$stmt->bindValue(':ghichu', $arr["ghichu"]);
 	}
     if($stmt->execute()) {
-		header("location: ../controller/admin.php?view=danhmuc");
+		header("location: ../controller/admin.php?view=theloai");
     } else {
         echo '<script language="javascript">';
         echo 'alert("Cập nhật thất bại")';
@@ -149,8 +149,8 @@ function updateDanhMuc($pdo, $arr) {
 // baiviet
 // insert vaibiet
 function insertBaiViet($pdo, $arr) {
-	$sql = "INSERT INTO baiviet (mabaiviet, tieude, noidung, ngaydang, hinhanh, madanhmuc)
-            VALUES (:mabaiviet, :tieude, :noidung, :ngaydang, :hinhanh, :madanhmuc)";
+	$sql = "INSERT INTO baiviet (mabaiviet, tieude, noidung, ngaydang, hinhanh, matheloai)
+            VALUES (:mabaiviet, :tieude, :noidung, :ngaydang, :hinhanh, :matheloai)";
 
     $stmt = $pdo->prepare($sql);
     $stmt->bindValue(":mabaiviet", $arr["mabv"]);
@@ -158,7 +158,7 @@ function insertBaiViet($pdo, $arr) {
     $stmt->bindValue(":noidung", $arr["noidung"]);
     $stmt->bindValue(":ngaydang", $arr["ngaydang"]);
     $stmt->bindValue(":hinhanh", $arr["hinhanh"]);
-    $stmt->bindValue(":madanhmuc", $arr["danhmuc"]);         
+    $stmt->bindValue(":matheloai", $arr["theloai"]);         
     if($stmt->execute()) {
         echo '<script language="javascript">';
         echo 'alert("Thêm thành công")';
@@ -173,14 +173,14 @@ function insertBaiViet($pdo, $arr) {
 
 // update baiviet
 function updateBaiViet($pdo, $arr) {
-	$sql = "UPDATE baiviet SET  tieude = :tieude, noidung = :noidung, ngaydang = :ngaydang, hinhanh = :hinhanh, madanhmuc = :madanhmuc WHERE mabaiviet = :mabaiviet";
+	$sql = "UPDATE baiviet SET  tieude = :tieude, noidung = :noidung, ngaydang = :ngaydang, hinhanh = :hinhanh, matheloai = :matheloai WHERE mabaiviet = :mabaiviet";
     $stmt = $pdo->prepare($sql);
     $stmt->bindValue(":mabaiviet", $arr["mabv"]);
     $stmt->bindValue(":tieude", $arr["tieude"]);
     $stmt->bindValue(":noidung", $arr["noidung"]);
     $stmt->bindValue(":ngaydang", $arr["ngaydang"]);
     $stmt->bindValue(":hinhanh", $arr["hinhanh"]);
-    $stmt->bindValue(":madanhmuc", $arr["danhmuc"]);         
+    $stmt->bindValue(":matheloai", $arr["theloai"]);         
     if($stmt->execute()) {
 		header("location: ../controller/admin.php?view=baiviet");
     } else {
