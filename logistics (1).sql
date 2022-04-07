@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 03, 2022 at 04:06 AM
+-- Generation Time: Apr 07, 2022 at 06:52 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -114,7 +114,8 @@ INSERT INTO `khachhang` (`makh`, `tenkhachhang`, `diachi`, `email`) VALUES
 (6, 'okok', 'okok', 'ok@gmail.com'),
 (7, 'okok', 'okok', 'ok@gmail.com'),
 (8, 'ijij', 'ok', 'k2j2@gmail.com'),
-(9, 'Nguyễn Huy Hoàng', 'Lê Lai, Hp', 'hoang@gmail.com');
+(9, 'Nguyễn Huy Hoàng', 'Lê Lai, Hp', 'hoang@gmail.com'),
+(10, 'Nguyễn Văn Hạnh', 'Hải Phòng', 'hanh@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -192,7 +193,7 @@ ALTER TABLE `hinhthuc`
 -- AUTO_INCREMENT for table `khachhang`
 --
 ALTER TABLE `khachhang`
-  MODIFY `makh` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `makh` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `user`
