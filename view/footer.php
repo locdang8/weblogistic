@@ -126,8 +126,15 @@
                     <div class="menu-mini col-md-4 col-sm-12"><a href="#">Dịch vụ</a>
                         <ul class="list-mini">
                         </ul>
+                        
                     </div>
-                    <div class="col-md-4 col-sm-12"><a href="#">Tư vấn hỏi đáp</a></div>
+                    <div class="col-md-4 col-sm-12 about-footer"><a href="#">Về chúng tôi</a>
+                        <li>Liên hệ với Hoàng Minh</li>
+                        <li>Về Hoàng Minh</li>
+                        <li>Hợp tác với công ty Hoàng Minh</li>
+                        <li>Quy chế hoạt động website</li>
+                        <li>Chính sách bảo mật</li>
+                    </div>
                     <div class="col-md-4 col-sm-12"><a href="#">Liên hệ</a></div>
                 </div>
             </div>

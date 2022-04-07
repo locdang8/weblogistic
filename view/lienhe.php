@@ -92,6 +92,7 @@
 			</div>
 		</div>
     </div>
+	<?php include("box.php")?>
 </div>
 
 <?php 

@@ -68,6 +68,7 @@
             <div class="phan-trang-item justify-content-center"><a href="">9</a></div>
         </div>
     </div>
+    <?php include("box.php")?>
 </div>
 </body>
 <?php include "footer.php"; ?>

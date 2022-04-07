@@ -97,6 +97,7 @@
             </div>
         </div>
     </div>
+    <?php include("box.php")?>
 </div>
 <!-- end introduce -->
 <?php include "../view/footer.php" ?>

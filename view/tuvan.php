@@ -88,7 +88,7 @@
                 </div>
             </div>
         </div>
-        
+        <?php include("box.php")?>
     </div>
 </div>
 <?php include "footer.php"?>

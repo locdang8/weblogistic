@@ -13,25 +13,25 @@
                         <img src="https://bestcargo.vn/wp-content/uploads/2018/05/banner-van-tai.jpg"
                             class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <h5>Công ty TNHH Dịch vụ Logistics & Thương mại Hoàng Minh</h5>
+                            <p>Thông tin giấy tờ, chi phí, công đoạn làm việc, các dịch vụ chi tiết nhất hỗ trợ khách hàng</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="https://bestcargo.vn/wp-content/uploads/2018/05/banner-1.jpg" class="d-block w-100"
                             alt="...">
-                        <div class="carousel-caption d-none d-md-block">
+                        <!-- <div class="carousel-caption d-none d-md-block">
                             <h5>Second slide label</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="carousel-item">
                         <img src="https://bestcargo.vn/wp-content/uploads/2018/05/banner-van-tai.jpg"
                             class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
+                        <!-- <div class="carousel-caption d-none d-md-block">
                             <h5>Third slide label</h5>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -66,11 +66,11 @@
             </div>
             <div class="col-md-5 col-sm-12 home-introduce__item">
                 <div class="introduce-image">
-                    <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
+                    <img src="https://bestcargo.vn/wp-content/uploads/2016/04/DHL-370x208.jpg" alt="">
                 </div>
                 <div class="introduce-review">
                     <div class="introduce-review__title">
-                        <p>GIAO NHẬN HÀNG HÓA</p>
+                        <p>CHUYỂN PHÁT NHANH QUỐC TẾ</p>
                     </div>
                     <div class="introduce-review__msg">
                         <p>Dịch vụ giao nhận - Cung cấp dịch vụ giao nhận vận chuyển đường bộ, đường sắt, đường biển,
@@ -80,11 +80,11 @@
             </div>
             <div class="col-md-5 col-sm-12 home-introduce__item">
                 <div class="introduce-image">
-                    <img src="https://bestcargo.vn/wp-content/uploads/2020/04/van-chuyen-hang-sieu-trong.jpg" alt="">
+                    <img src="https://bestcargo.vn/wp-content/uploads/2015/06/13839786_1129175397155313_852192211_o-370x208.jpg" alt="">
                 </div>
                 <div class="introduce-review">
                     <div class="introduce-review__title">
-                        <p>GIAO NHẬN HÀNG HÓA</p>
+                        <p>KHAI BÁO HẢI QUAN</p>
                     </div>
                     <div class="introduce-review__msg">
                         <p>Dịch vụ giao nhận - Cung cấp dịch vụ giao nhận vận chuyển đường bộ, đường sắt, đường biển,
@@ -140,12 +140,12 @@
                     </div>
                     <div class="col-md-6 col-xl-3 col-sm-12">
                         <div class="item-image">
-                            <img src="https://bestcargo.vn/wp-content/uploads/2020/04/thu-tuc-xuat-quan-ao-bao-ho-y-te.jpg"
+                            <img src="https://bestcargo.vn/wp-content/uploads/2021/07/chuyen-phat-nhanh-di-phan-lan.jpg"
                                 alt="">
                         </div>
                         <div class="item-review">
                             <div class="item-review__title">
-                                <p>Thủ tục xuất quần áo bảo hộ đi quốc tế chi tiết nhất</p>
+                                <p>Chuyển phát nhanh đi Phần Lan giá rẻ, nhanh chóng</p>
                             </div>
                             <div class="item-review__msg">
                                 <p>Cần Thơ là
@@ -198,11 +198,11 @@
                 <div class="row">
                     <div class="col-md-6 col-xl-3 col-sm-12">
                         <div class="item-image">
-                            <img src="https://bestcargo.vn/wp-content/uploads/2018/03/dịch-vụ-hải-quan.jpg" alt="">
+                            <img src="https://bestcargo.vn/wp-content/uploads/2021/12/FDA.jpg" alt="">
                         </div>
                         <div class="item-review">
                             <div class="item-review__title">
-                                <p>Chuyển phát nhanh Quốc tế Nội địa tại Cần Thơ</p>
+                                <p>Thủ Tục Xin Cấp Giấy Chứng Nhận FDA Hoa Kỳ Tại Việt Nam"</p>
                             </div>
                             <div class="item-review__msg">
                                 <p>Cần Thơ là
@@ -230,11 +230,11 @@
                     </div>
                     <div class="col-md-6 col-xl-3 col-sm-12">
                         <div class="item-image">
-                            <img src="https://bestcargo.vn/wp-content/uploads/2018/03/dịch-vụ-hải-quan.jpg" alt="">
+                            <img src="https://bestcargo.vn/wp-content/uploads/2021/11/dich-vu-hai-chieu-viet-nhat.jpg" alt="">
                         </div>
                         <div class="item-review">
                             <div class="item-review__title">
-                                <p>Chuyển phát nhanh Quốc tế Nội địa tại Cần Thơ</p>
+                                <p>Dịch vụ đấu giá hàng Nhật Bản giá rẻ</p>
                             </div>
                             <div class="item-review__msg">
                                 <p>Cần Thơ là
@@ -426,4 +426,5 @@
 
         </div>
     </div>
+    <?php include("box.php")?>
 </div>

@@ -19,7 +19,7 @@ const listSet = document.querySelector("#list-set");
 const dropDown = document.querySelector(".dropdown");
 window.addEventListener("DOMContentLoaded", function () {
   let ten_dv = dichvu_array.map(function (element) {
-      return `<li><a href="${element.src}">${element.ten}</a></li>`;
+      return `<li><a style="font-size: 15px" href="${element.src}">${element.ten}</a></li>`;
     })
     .join("");
 

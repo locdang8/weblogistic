@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 07, 2022 at 07:34 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.1.2
+-- Generation Time: Apr 07, 2022 at 07:55 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -42,8 +42,8 @@ CREATE TABLE `baiviet` (
 
 INSERT INTO `baiviet` (`mabaiviet`, `tieude`, `noidung`, `ngaydang`, `hinhanh`, `matheloai`) VALUES
 (1, 'Dịch vụ vận chuyển', 'Thủ tục xuất khẩu gỗ có quy trình như thế nào? Gỗ nguyên khối hay các sản phẩm từ gỗ là mặt hàng chiếm tỉ trọng lớn trong mảng xuất khẩu hằng năm của nước ta. Tuy nhiên, đây cũng chính là sản phẩm có thủ tục hải quan khá phức tạp, cần tuân thủ nhiều chính sách pháp lí. Vậy quy trình xuất khẩu gỗ và các sản phẩm từ gỗ như thế nào? Chúng ta sẽ cùng tìm hiểu chi tiết ngay sau đây!', '2022-04-08 00:30:00', 'logistics5.jpeg', 1),
-(2, 'kokoko', 'kokoko', '2022-03-20 22:03:00', 'logistics5.jpeg', 2),
-(4, 'kimochioo', 'kimochioo', '2022-03-01 22:45:00', 'logistics5.jpeg', 2);
+(2, 'Quy định vận chuyển chất lỏng			', 'Quy định vận chuyển chất lỏng qua đường hàng không chi tiết nhất Vận chuyển...					', '2022-03-20 22:03:00', 'logistics1.jpg', 2),
+(4, 'Doanh nghiệp vận tải biển ảnh hưởng ra sao trước căng thẳng Nga-Ukraine?', 'Doanh nghiệp vận tải biển ảnh hưởng ra sao trước căng thẳng Nga-Ukraine?Doanh nghiệp vận tải biển ảnh hưởng ra sao trước căng thẳng Nga-Ukraine?', '2022-03-01 22:45:00', 'logistic4.jpg', 2);
 
 -- --------------------------------------------------------
 
@@ -136,7 +136,7 @@ CREATE TABLE `theloai` (
 
 INSERT INTO `theloai` (`matheloai`, `tentheloai`, `ghichu`) VALUES
 (1, 'Dịch vụ COD', 'Chuyển phát nhanh'),
-(2, 'Vận chuyển đ nhớ gì ', 'Vận chuyển siêu nhanh '),
+(2, 'Vận chuyển 1', 'Vận chuyển siêu nhanh '),
 (4, 'Vận chuyển ngày đêm', 'Không có ghi chú');
 
 -- --------------------------------------------------------
