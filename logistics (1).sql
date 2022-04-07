@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 07, 2022 at 06:52 PM
+-- Generation Time: Apr 07, 2022 at 06:56 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -120,6 +120,52 @@ INSERT INTO `khachhang` (`makh`, `tenkhachhang`, `diachi`, `email`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `theloai`
+--
+
+CREATE TABLE `theloai` (
+  `matheloai` int(11) NOT NULL,
+  `tentheloai` varchar(255) NOT NULL,
+  `ghichu` varchar(255) DEFAULT 'Không có ghi chú'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `theloai`
+--
+
+INSERT INTO `theloai` (`matheloai`, `tentheloai`, `ghichu`) VALUES
+(1, 'Dịch vụ COD', 'Chuyển phát nhanh'),
+(2, 'Vận chuyển đ nhớ gì ', 'Vận chuyển siêu nhanh '),
+(4, 'Vận chuyển ngày đêm', 'Không có ghi chú');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ttdonbaogia`
+--
+
+CREATE TABLE `ttdonbaogia` (
+  `madon` int(11) NOT NULL,
+  `noidung` varchar(255) NOT NULL,
+  `ngaylap` datetime NOT NULL,
+  `mahinhthuc` int(11) NOT NULL,
+  `makh` int(11) NOT NULL,
+  `madv` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `ttdonbaogia`
+--
+
+INSERT INTO `ttdonbaogia` (`madon`, `noidung`, `ngaylap`, `mahinhthuc`, `makh`, `madv`) VALUES
+(1, 'tôi muốn hợp tác', '2022-03-21 09:19:40', 1, 5, 'LK01'),
+(2, 'okok', '2022-03-21 09:24:56', 1, 8, 'COD'),
+(3, 'Muốn hợp tác', '2022-03-28 10:47:03', 2, 9, 'VC02'),
+(4, 'okoko', '2022-04-03 01:13:40', 1, 10, 'COD');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user`
 --
 
@@ -168,6 +214,21 @@ ALTER TABLE `khachhang`
   ADD PRIMARY KEY (`makh`);
 
 --
+-- Indexes for table `theloai`
+--
+ALTER TABLE `theloai`
+  ADD PRIMARY KEY (`matheloai`);
+
+--
+-- Indexes for table `ttdonbaogia`
+--
+ALTER TABLE `ttdonbaogia`
+  ADD PRIMARY KEY (`madon`),
+  ADD KEY `ma_kh` (`makh`),
+  ADD KEY `ma_ht` (`mahinhthuc`),
+  ADD KEY `ma_dv` (`madv`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -196,6 +257,18 @@ ALTER TABLE `khachhang`
   MODIFY `makh` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
+-- AUTO_INCREMENT for table `theloai`
+--
+ALTER TABLE `theloai`
+  MODIFY `matheloai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `ttdonbaogia`
+--
+ALTER TABLE `ttdonbaogia`
+  MODIFY `madon` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
@@ -210,6 +283,14 @@ ALTER TABLE `user`
 --
 ALTER TABLE `baiviet`
   ADD CONSTRAINT `ma_theloai` FOREIGN KEY (`matheloai`) REFERENCES `theloai` (`matheloai`);
+
+--
+-- Constraints for table `ttdonbaogia`
+--
+ALTER TABLE `ttdonbaogia`
+  ADD CONSTRAINT `ma_dv` FOREIGN KEY (`madv`) REFERENCES `dichvu` (`madv`),
+  ADD CONSTRAINT `ma_ht` FOREIGN KEY (`mahinhthuc`) REFERENCES `hinhthuc` (`mahinhthuc`),
+  ADD CONSTRAINT `ma_kh` FOREIGN KEY (`makh`) REFERENCES `khachhang` (`makh`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
