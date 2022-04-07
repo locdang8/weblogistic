@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 07, 2022 at 06:56 PM
+-- Generation Time: Apr 07, 2022 at 07:34 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `baiviet` (
   `mabaiviet` int(11) NOT NULL,
   `tieude` varchar(255) NOT NULL,
-  `noidung` varchar(255) NOT NULL,
+  `noidung` text NOT NULL,
   `ngaydang` datetime NOT NULL,
   `hinhanh` varchar(255) NOT NULL,
   `matheloai` int(11) NOT NULL
@@ -41,7 +41,7 @@ CREATE TABLE `baiviet` (
 --
 
 INSERT INTO `baiviet` (`mabaiviet`, `tieude`, `noidung`, `ngaydang`, `hinhanh`, `matheloai`) VALUES
-(1, 'okokok', 'okokoko', '2022-03-20 22:03:00', 'logistics3.jpg', 1),
+(1, 'Dịch vụ vận chuyển', 'Thủ tục xuất khẩu gỗ có quy trình như thế nào? Gỗ nguyên khối hay các sản phẩm từ gỗ là mặt hàng chiếm tỉ trọng lớn trong mảng xuất khẩu hằng năm của nước ta. Tuy nhiên, đây cũng chính là sản phẩm có thủ tục hải quan khá phức tạp, cần tuân thủ nhiều chính sách pháp lí. Vậy quy trình xuất khẩu gỗ và các sản phẩm từ gỗ như thế nào? Chúng ta sẽ cùng tìm hiểu chi tiết ngay sau đây!', '2022-04-08 00:30:00', 'logistics5.jpeg', 1),
 (2, 'kokoko', 'kokoko', '2022-03-20 22:03:00', 'logistics5.jpeg', 2),
 (4, 'kimochioo', 'kimochioo', '2022-03-01 22:45:00', 'logistics5.jpeg', 2);
 
@@ -54,7 +54,7 @@ INSERT INTO `baiviet` (`mabaiviet`, `tieude`, `noidung`, `ngaydang`, `hinhanh`, 
 CREATE TABLE `dichvu` (
   `madv` varchar(32) NOT NULL,
   `tendv` varchar(255) NOT NULL,
-  `noidung` varchar(255) NOT NULL
+  `noidung` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -62,7 +62,7 @@ CREATE TABLE `dichvu` (
 --
 
 INSERT INTO `dichvu` (`madv`, `tendv`, `noidung`) VALUES
-('COD', 'Dịch vụ chuyển phát ', 'Tốc độ nhanh'),
+('COD', 'Dịch vụ chuyển phát ', 'Vài năm gần đây, khô gà lá chanh nổi lên như một món ăn vặt được nhiều người yêu thích, đặc biệt là giới trẻ. Được chế biến bởi nhiều công đoạn khá cầu kỳ, với những sợi thịt gà mềm dai, kết hợp với vị cay của ớt và mùi thơm nồng của lá chanh khiến món gà khô này càng thêm hấp dẫn. HIện tại, Bestcargo nhận vận chuyển khô gà đi Mỹ đảm bảo nhất!'),
 ('LK01', 'Lưu kho', 'Cất trữ hàng hóa, lưu kho cho khách hàng có nhu cầu sử dụng'),
 ('TT01', 'Thủ tục hải quan', 'Làm các thủ tục giấy tờ liên quan đến hải quan cho khách hàng'),
 ('VC01', 'Vận chuyển đường bộ', 'Vận chuyển bằng đường bộ dùng các xe vận tải, thuê container,..'),
@@ -115,7 +115,8 @@ INSERT INTO `khachhang` (`makh`, `tenkhachhang`, `diachi`, `email`) VALUES
 (7, 'okok', 'okok', 'ok@gmail.com'),
 (8, 'ijij', 'ok', 'k2j2@gmail.com'),
 (9, 'Nguyễn Huy Hoàng', 'Lê Lai, Hp', 'hoang@gmail.com'),
-(10, 'Nguyễn Văn Hạnh', 'Hải Phòng', 'hanh@gmail.com');
+(10, 'Nguyễn Văn Hạnh', 'Hải Phòng', 'hanh@gmail.com'),
+(11, 'Nguyễn Văn Test', '414 Lạch Tray, Hải Phòng', 'test@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -161,7 +162,8 @@ INSERT INTO `ttdonbaogia` (`madon`, `noidung`, `ngaylap`, `mahinhthuc`, `makh`, 
 (1, 'tôi muốn hợp tác', '2022-03-21 09:19:40', 1, 5, 'LK01'),
 (2, 'okok', '2022-03-21 09:24:56', 1, 8, 'COD'),
 (3, 'Muốn hợp tác', '2022-03-28 10:47:03', 2, 9, 'VC02'),
-(4, 'okoko', '2022-04-03 01:13:40', 1, 10, 'COD');
+(4, 'okoko', '2022-04-03 01:13:40', 1, 10, 'COD'),
+(5, 'Muốn hợp tác', '2022-04-07 07:06:20', 1, 11, 'LK01');
 
 -- --------------------------------------------------------
 
@@ -254,7 +256,7 @@ ALTER TABLE `hinhthuc`
 -- AUTO_INCREMENT for table `khachhang`
 --
 ALTER TABLE `khachhang`
-  MODIFY `makh` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `makh` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `theloai`
@@ -266,7 +268,7 @@ ALTER TABLE `theloai`
 -- AUTO_INCREMENT for table `ttdonbaogia`
 --
 ALTER TABLE `ttdonbaogia`
-  MODIFY `madon` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `madon` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `user`
