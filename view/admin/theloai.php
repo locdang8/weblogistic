@@ -1,14 +1,14 @@
 <div>
     <button>
-        <a href="../controller/them_dm.php">Thêm danh mục</a>
+        <a href="../controller/them_dm.php">Thêm thể loại</a>
     </button>
 </div>
 
 <table class="styled-table">
     <thead>
         <tr>
-            <th>Mã danh mục</th>
-            <th>Tên danh mục</th>
+            <th>Mã thể loại</th>
+            <th>Tên thể loại</th>
             <th>Ghi chú</th>
             <th>Tùy chỉnh</th>
         </tr>
